@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Simple Get,Put, Delete, Post</title>
+	<link href="../Content/demoPages.css" rel="stylesheet" type="text/css" />
+	<script src="../Scripts/jquery-1.6.2.min.js" type="text/javascript"></script>
+	<script src="../Scripts/Custom/simpleGetPost.js" type="text/javascript"></script>
+</head>
+<body>
+	<h3>
+		Some GET operations		
+		<select id="post-arg-type">
+			<option selected="selected" value="form">x-www-form-urlencoded (default)</option>
+			<option value="xml">XML</option>
+			<option value="json">JSON</option>
+		</select>
+	</h3>
+		<section class="get-default">
+			<button id="get-default">
+				Do it</button>
+			<span class="demo-info">http://host/api/simple - HTTP GET</span>
+		</section>
+		<section class="get-parameters">
+			<input type="number" id="get-with-id-data" placeholder="123" />
+			<button id="get-with-id">
+				Passing in numeric parameter</button>
+			<span class="demo-info">http://host/api/simple<strong>?id={something}</strong> - HTTP
+				GET</span>
+		</section>
+		<section class="get-parameters">
+			<input type="text" id="get-with-text-data" />
+			<button id="get-with-text">
+				Passing in text parameter</button>
+			<span class="demo-info">http://host/api/simple<strong>?someText={something}</strong>
+				- HTTP GET</span>
+		</section>
+		<section class="get-parameters">
+			<input type="text" id="get-with-kindofbeer-data" />
+			<button id="get-with-kindofbeer">
+				Passing in kind of beer</button>
+			<span class="demo-info">http://host/<strong>beer/{kindOfBeer}</strong> - HTTP GET</span>
+		</section>
+		<h3>
+			POST, HEAD, PUT, DELETE</h3>
+		<section class="get-parameters">
+			<input type="text" class="small" id="post-arg1-data" placeholder="ArgOne" />
+			<input type="text" class="small" id="post-arg2-data" placeholder="ArgTwo" />
+			<input type="text" class="small" id="post-arg3-data" placeholder="ArgThree" />
+			<button id="post-with-args">POST data down the pipe</button>
+			<button id="put-with-args">PUT data down the pipe</button>
+			<span class="demo-info">http://host/<strong>simple/</strong> - HTTP POST/PUT</span>
+		</section>
+		<section class="get-parameters">
+			<button id="head-request">HEAD request</button>
+			<span class="demo-info">http://host/<strong>simple/</strong> - HTTP HEAD</span>
+		</section>
+		<section class="get-parameters">
+			<button id="generic-get">GET response message</button>
+			<span class="demo-info">http://host/<strong>generic/</strong> - HTTP GET</span>
+		</section>
+</body>
+</html>

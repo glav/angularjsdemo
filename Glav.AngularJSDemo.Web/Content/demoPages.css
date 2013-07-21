@@ -1,0 +1,69 @@
+﻿html {
+    background-color: #e2e2e2;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+	font-size:1.3em;
+}
+
+h1 {
+	font-size: 2.0 em;
+}
+h2 {
+	font-size: 1.8 em;
+}
+h3 {
+	font-size: 1.6 em;
+}
+
+h1,h2,h3,h4 {
+	text-align:center;
+}
+
+
+
+body {
+    background-color: #fff;
+    border-top: solid 10px #000;
+    color: #333;
+    font-size:1.3em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+	margin: 5px 0;
+	padding: 10px 0;
+	border-bottom: 1px dashed silver;
+	text-align:center;
+}
+
+section span.demo-info {
+	color: #B49254;
+	padding: 0 15px;
+}
+	section span.demo-info:before {
+		content:"(";
+	}
+	section span.demo-info:after {
+		content:")";
+	}
+	
+input.small {
+	width: 60px;
+}
+
+#help-container {
+	text-align:left;
+	margin-left: 30px;
+}
+
+#help-container span.method,#help-container span.doco,#help-container span.parms {
+	margin-left: 35px;
+}
+#help-container span.parm-item {
+	margin-left:40px;
+}

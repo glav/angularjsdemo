@@ -1,0 +1,31 @@
+﻿@{
+    var angularEnabled = (ViewBag.AngularAppName != null);
+    var angularAppName = ViewBag.AngularAppName;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @if (angularEnabled)
+    {
+        @Scripts.Render("~/bundles/angularJS")
+    }
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+        @if (angularEnabled)
+        {
+            <text><body id="main-document-body" data-ng-app="@angularAppName"></text>
+        }
+        else
+        {
+            <text><body id="main-document-body"></text>
+        }
+    @RenderBody()
+    
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

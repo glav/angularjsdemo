@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Glav.AgularJSDemo.Web</name>
+    </assembly>
+    <members>
+        <member name="M:Glav.AgularJSDemo.Web.Controllers.SimpleController.Get">
+            <summary>
+            The default GET implementation
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Glav.AgularJSDemo.Web.Controllers.SimpleController.Get(System.Int32)">
+            <summary>
+            Standard GET but expecting an integer parameter
+            </summary>
+            <param name="id">Some identifier</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glav.AgularJSDemo.Web.Controllers.SimpleController.GetMeSomeBeer(System.String)">
+            <summary>
+            Demand a serving of your favourite amber beverage
+            </summary>
+            <param name="kindOfBeer">The type of beeryou want</param>
+            <returns>A string showing complete compliance with your request</returns>
+        </member>
+        <member name="M:Glav._WebApiDemo.Web.Controllers.SlideController.Get">
+            <summary>
+            Gets the startiung slide in the Deck
+            </summary>
+            <returns>Presentation slide information</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Glav._WebApiDemo.Web.Controllers.SlideController.GetSlide(System.Nullable{System.Int32})" -->
+    </members>
+</doc>

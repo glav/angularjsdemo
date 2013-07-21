@@ -1,0 +1,74 @@
+﻿@model IEnumerable<Glav.AgularJSDemo.Web.Models.Slide>
+@{
+    ViewBag.AngularAppName = "demoApp";
+}
+@section scripts {
+    @*    
+    --Previous jQuery based code--
+    <script src="~/Scripts/Custom/uiBinder.js" type="text/javascript"></script>
+    <script src="~/Scripts/Custom/slideDeckManager.js" type="text/javascript"></script>
+    <script src="~/Scripts/Custom/Home.js" type="text/javascript"></script>
+    *@
+    @Scripts.Render("~/bundles/angularJSDemo")
+}
+
+<header>
+    <div class="content-wrapper">
+        <div class="float-left">
+            <p class="site-title">
+                <a href="~/">Using Angular JS in an ASP.Net application</a>
+            </p>
+        </div>
+        <span id="slide-list-action">Slide List</span>
+        <div id="slide-list" class="hidden">
+            <ul>
+                @foreach (var slide in Model)
+                {
+                    <li><a href="/#@slide.SequenceNumber">&nbsp;&nbsp;#@slide.SequenceNumber </a></li>
+                }
+
+            </ul>
+        </div>
+    </div>
+</header>
+<div id="body" data-ng-controller="slidesController" data-keyboard-navigation>
+    <input type="hidden" id="current-slide-number" value="0" />
+    
+    <section class="featured heading">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>{{slide.Title}}</h1>
+                <h2>{{slide.SubTitle}}</h2>
+            </hgroup>
+            <p>{{slide.TitleBlurb}}</p>
+        </div>
+        <div class="access-area">
+            <input type="text" id="slide-feedback" />
+            <button id="submit-slide-feedback">Submit Feedback</button>
+            <span id="feedback-posted-message"></span>
+        </div>
+    </section>
+
+    <div id="slide-detail-content" data-ng-cloak class="data-ng-cloak">
+        <section class="content-wrapper main-content clear-fix">
+            <div id="image-container" data-ng-show="showSlideImage">
+                <img data-ng-src='{{slide.ImageSource}}' alt='Slide Graphic' />
+            </div>
+
+            <h3>{{slide.DetailHeading}}</h3>
+            <ol class="round {{listWidth}}">
+                <li data-ng-repeat="detailPoint in slide.DetailPoints" class="{{detailPointClassNames[$index]}}">
+                    <h5 data-ng-class="highlightClass(detailPoint)" >{{detailPoint.DetailPointHeader}}</h5>
+                    {{ detailPoint.DetailPointText }}
+                </li>
+            </ol>
+        </section>
+    </div>
+
+
+    <div id="slide-navigation">
+        <a id="prev-slide" data-ng-show="showPreviousSlideNav" href="#/slide/{{previousSlideNumber}}" data-ng-click="getSlide(previousSlideNumber)">Prev</a>
+        <a id="next-slide" data-ng-show="showNextSlideNav" href="#/slide/{{nextSlideNumber}}" data-ng-click="getSlide(nextSlideNumber)">Next</a>
+        <a id="demo-link" data-ng-show="showDemoNav" class="demo-link" href="/demoPages/{{slide.DemoPage}}" target="_blank">Demo Page</a>
+    </div>
+</div>

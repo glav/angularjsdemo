@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>OData Support</title>
+	<link href="../Content/demoPages.css" rel="stylesheet" type="text/css" />
+	<script src="../Scripts/jquery-1.6.2.min.js" type="text/javascript"></script>
+	<script src="../Scripts/Custom/odatasupport.js" type="text/javascript"></script>
+</head>
+<body>
+	<h3>
+		OData Support
+	</h3>
+		<section class="get-default">
+			<a href="/api/OData" target="_blank">Get All</a>
+		</section>
+		<section class="get-default">
+			<a href="/api/OData?$top=2" target="_blank">Get top 2</a>
+		</section>
+		<section class="get-default">
+			<a href="/api/OData?$top=2&$skip=2" target="_blank">Get top 2 after skipping 2</a>
+		</section>
+		<section class="get-default">
+			<a href="/api/OData?$filter=Title eq 'Agenda'" target="_blank">Filter on Title equals 'Agenda'</a>
+		</section>
+		
+</body>
+</html>

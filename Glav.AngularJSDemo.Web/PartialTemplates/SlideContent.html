@@ -1,0 +1,30 @@
+﻿    <section class="featured heading">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>{{slide.Title}}</h1>
+                <h2>{{slide.SubTitle}}</h2>
+            </hgroup>
+            <p>{{slide.TitleBlurb}}</p>
+        </div>
+        <div class="access-area">
+            <input type="text" id="slide-feedback" />
+            <button id="submit-slide-feedback">Submit Feedback</button>
+            <span id="feedback-posted-message"></span>
+        </div>
+    </section>
+
+    <div id="slide-detail-content" data-ng-cloak class="data-ng-cloak">
+        <section class="content-wrapper main-content clear-fix">
+            <div id="image-container" data-ng-show="showSlideImage">
+                <img data-ng-src='{{slide.ImageSource}}' alt='Slide Graphic' />
+            </div>
+
+            <h3>{{slide.DetailHeading}}</h3>
+            <ol class="round {{listWidth}}">
+                <li data-ng-repeat="detailPoint in slide.DetailPoints" class="{{detailPointClassNames[$index]}}">
+                    <h5 data-ng-class="highlightClass(detailPoint)" >{{detailPoint.DetailPointHeader}}</h5>
+                    {{ detailPoint.DetailPointText }}
+                </li>
+            </ol>
+        </section>
+    </div>

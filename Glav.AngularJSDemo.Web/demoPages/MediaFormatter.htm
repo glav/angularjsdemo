@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Media Formatters</title>
+	<link href="../Content/demoPages.css" rel="stylesheet" type="text/css" />
+	<script src="../Scripts/jquery-1.6.2.min.js" type="text/javascript"></script>
+	<script src="../Scripts/Custom/MediaFormatter.js" type="text/javascript"></script>
+</head>
+<body>
+	<h3>
+		Media Formatters and Delegating Handlers
+	</h3>
+		<section class="get-default">
+			<a id="call-media-formatter" href="#">Invoke Custom Media Formatter</a>
+			<br />
+			<span class="demo-info">Content Type: "<strong>application/x-dodgy</strong>"</span>
+			<br />
+			<span class="demo-info">Posting: "<strong>N|test,A1|Joe,A2|Bodgy</strong>"</span>
+		</section>
+		<section class="get-default">
+			<span>Result:&nbsp</span>
+			<span id="dodgy-result"></span>
+		</section>
+
+		<section class="get-default">
+			<button id="get-site-stats">Get Site Stats</button>
+			<span class="demo-info">Retrieve Site stats collected by usage logger - delegating handler</span>
+		</section>
+		<section class="get-default">
+			<div id="site-stats-container"></div>
+		</section>
+</body>
+</html>
