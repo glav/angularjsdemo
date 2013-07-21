@@ -11,7 +11,6 @@ using Glav._WebApiDemo.Web.Data;
 using Glav.AgularJSDemo.Web;
 using Glav.AgularJSDemo.Web.Controllers;
 using System.Web.Http.Description;
-using System.Web.Http.SelfHost;
 using System.Web.Http.ModelBinding;
 
 namespace Glav._WebApiDemo.Web
@@ -21,8 +20,6 @@ namespace Glav._WebApiDemo.Web
 
 	public class WebApiApplication : System.Web.HttpApplication
 	{
-		private static HttpSelfHostServer _server = null;
-
 		protected void Application_Start()
 		{
 			AreaRegistration.RegisterAllAreas();
