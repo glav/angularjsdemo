@@ -35,7 +35,6 @@ namespace Glav._WebApiDemo.Web
 
 		private void SetupApiRoutes()
 		{
-			RouteTable.Routes.MapHttpRoute("Simple-specific", "Beer/{kindOfBeer}", new { controller = "Simple", action = "GetMeSomeBeer" });
 			RouteTable.Routes.MapHttpRoute("default-http", "api/{controller}/{slideNumber}");
 		}
 
