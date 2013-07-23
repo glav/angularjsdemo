@@ -16,5 +16,5 @@ namespace Glav._WebApiDemo.Web.Controllers
 			var slideList = _repo.GetAllSlides();
 			return View(slideList);
 		}
-	}
+    }
 }

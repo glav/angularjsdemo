@@ -3,10 +3,10 @@
 
     var templateUrl = '/PartialTemplates/SlideContent.html';
 
-    //$routeProvider
-    //    .when('/', { templateUrl: templateUrl, controller: 'slidesController' })
-    //    .when('/slide', { templateUrl: templateUrl, controller: 'slidesController' })
-    //    .when('/slide/:slideno', { templateUrl: templateUrl, controller: 'slidesController' })
+    $routeProvider
+        .when('/', { templateUrl: templateUrl, controller: 'slidesController' })
+        .when('/slide', { templateUrl: templateUrl, controller: 'slidesController' })
+        .when('/slide/:slideno', { templateUrl: templateUrl, controller: 'slidesController' })
 
-    //.otherwise({ redirectTo: '/' });
-    }]);
+    .otherwise({ redirectTo: '/' });
+}]);

@@ -1,7 +1,7 @@
 ﻿    <section class="featured heading">
         <div class="content-wrapper">
             <hgroup class="title">
-                <h1>{{slide.Title}}</h1>
+                <h1 >{{slide.Title}}</h1>
                 <h2>{{slide.SubTitle}}</h2>
             </hgroup>
             <p>{{slide.TitleBlurb}}</p>
@@ -22,9 +22,10 @@
             <h3>{{slide.DetailHeading}}</h3>
             <ol class="round {{listWidth}}">
                 <li data-ng-repeat="detailPoint in slide.DetailPoints" class="{{detailPointClassNames[$index]}}">
-                    <h5 data-ng-class="highlightClass(detailPoint)" >{{detailPoint.DetailPointHeader}}</h5>
-                    {{ detailPoint.DetailPointText }}
+                    <h5 data-ng-class="highlightClass(detailPoint)" ng-bind-html-unsafe="detailPoint.DetailPointHeader" ></h5>
+                    <span data-ng-bind-html-unsafe="detailPoint.DetailPointText"></span>
                 </li>
             </ol>
         </section>
     </div>
+

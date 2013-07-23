@@ -19,25 +19,26 @@
                 <a href="~/">Using Angular JS in an ASP.Net application</a>
             </p>
         </div>
-        <span id="slide-list-action">Slide List</span>
+        <span id="slide-list-action" data-show-slide-list data-slide-list="#slide-list">Slide List</span>
         <div id="slide-list" class="hidden">
             <ul>
                 @foreach (var slide in Model)
                 {
-                    <li><a href="/#@slide.SequenceNumber">&nbsp;&nbsp;#@slide.SequenceNumber </a></li>
+                    <li><a href="/#/slide/@slide.SequenceNumber">&nbsp;&nbsp;#@slide.SequenceNumber </a></li>
                 }
 
             </ul>
         </div>
     </div>
 </header>
-<div id="body" data-ng-controller="slidesController" data-keyboard-navigation>
+<div id="body" data-ng-controller="slidesController">
     <input type="hidden" id="current-slide-number" value="0" />
     
-    <section class="featured heading">
+        <div data-ng-view></div>
+    @*    <section class="featured heading">
         <div class="content-wrapper">
             <hgroup class="title">
-                <h1>{{slide.Title}}</h1>
+                <h1 >{{slide.Title}}</h1>
                 <h2>{{slide.SubTitle}}</h2>
             </hgroup>
             <p>{{slide.TitleBlurb}}</p>
@@ -58,17 +59,17 @@
             <h3>{{slide.DetailHeading}}</h3>
             <ol class="round {{listWidth}}">
                 <li data-ng-repeat="detailPoint in slide.DetailPoints" class="{{detailPointClassNames[$index]}}">
-                    <h5 data-ng-class="highlightClass(detailPoint)" >{{detailPoint.DetailPointHeader}}</h5>
-                    {{ detailPoint.DetailPointText }}
+                    <h5 data-ng-class="highlightClass(detailPoint)" ng-bind-html-unsafe="detailPoint.DetailPointHeader" ></h5>
+                    <span data-ng-bind-html-unsafe="detailPoint.DetailPointText"></span>
                 </li>
             </ol>
         </section>
     </div>
+*@
 
-
-    <div id="slide-navigation">
-        <a id="prev-slide" data-ng-show="showPreviousSlideNav" href="#/slide/{{previousSlideNumber}}" data-ng-click="getSlide(previousSlideNumber)">Prev</a>
-        <a id="next-slide" data-ng-show="showNextSlideNav" href="#/slide/{{nextSlideNumber}}" data-ng-click="getSlide(nextSlideNumber)">Next</a>
+    <div id="slide-navigation" data-ng-controller="navigationController">
+        <a id="prev-slide" data-ng-show="showPreviousSlideNav" href="#/slide/{{previousSlideNumber}}" >Prev</a>
+        <a id="next-slide" data-ng-show="showNextSlideNav" href="#/slide/{{nextSlideNumber}}" >Next</a>
         <a id="demo-link" data-ng-show="showDemoNav" class="demo-link" href="/demoPages/{{slide.DemoPage}}" target="_blank">Demo Page</a>
     </div>
 </div>

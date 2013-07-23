@@ -1,5 +1,5 @@
 ﻿html {
-    background-color: #e2e2e2;
+    background-color: white;
     margin: 0;
     padding: 0;
 }
@@ -37,7 +37,6 @@ body {
 section {
 	margin: 5px 0;
 	padding: 10px 0;
-	border-bottom: 1px dashed silver;
 	text-align:center;
 }
 
@@ -66,4 +65,24 @@ input.small {
 }
 #help-container span.parm-item {
 	margin-left:40px;
+}
+
+section ul.compact {
+    list-style: circle;
+    margin: auto;
+}
+    section ul.compact li {
+        text-align:left;
+    }
+
+.hang-left {
+    float: left;
+}
+.hang-right {
+    float: right;
+}
+
+.half-width {
+    width: 50%;
+    margin: auto;
 }

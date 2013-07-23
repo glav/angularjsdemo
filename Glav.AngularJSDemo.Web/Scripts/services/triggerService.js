@@ -1,8 +1,10 @@
 ﻿window.app.service('triggerService', ['$rootScope', function ($rootScope) {
     this.slideChangedKey = "triggerSlideChanged";
+    this.slideNavigationKey = "triggerSlideNavigation";
 
-    this.triggerSlideChange = function (slide) {
-        $rootScope.$broadcast(this.slideChangedKey, slide);
+    // Slide has been changed to slideNumber
+    this.triggerSlideChange = function (slideNumber) {
+        $rootScope.$broadcast(this.slideChangedKey, slideNumber);
     };
 
 }]);

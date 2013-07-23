@@ -24,7 +24,7 @@ namespace Glav._WebApiDemo.Web
                         "~/Scripts/controllers/slidesController.js").Include(
                         "~/Scripts/controllers/navigationController.js").Include(
                         "~/Scripts/services/triggerService.js").Include(
-                        "~/Scripts/directives/keyboardNavigationDirective.js").Include(
+                        "~/Scripts/directives/showSlideListDirective.js").Include(
                         "~/Scripts/factories/slideFactory.js"));
 		}
 	}

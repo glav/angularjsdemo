@@ -48,26 +48,25 @@ namespace Glav.AgularJSDemo.Web.Data
 			deckSlide.DetailPoints.Add(new SlideDetailPoint("The basics", "What is can do, how, and why is it different"));
 			deckSlide.DetailPoints.Add(new SlideDetailPoint("More advanced", "Directives, twisting HTML"));
 			deckSlide.DetailPoints.Add(new SlideDetailPoint("Integration with ASP.Net and jQuery", "Making beautiful music together"));
-			deckSlide.DetailPoints.Add(new SlideDetailPoint("Wrap up", "Loud applause and high eval scores."));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Likes and dislikes", "What we found was good and also bad, plus some gotchas"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Wrap up", "Loud applause and high eval scores."));
 			this.Add(deckSlide);
 			
 			// Slide 2
 			deckSlide = new Slide
 			{
 				SequenceNumber = sequenceNumber += 1,
-				Title = "Bit of history",
-				SubTitle = "",
+				Title = "But first, what is it?",
+				SubTitle = "So you can do Databinding, so what?",
 				TitleBlurb = "",
-				DetailHeading = "Where we started from in the .Net world",
+				DetailHeading = "The high level bits",
 				DemoPage = "",
-				ImageSource = "/images/professor.jpg"
+				ImageSource = "/images/bacon-coffee-cup.jpg"
 
 			};
-			deckSlide.DetailPoints.Add(new SlideDetailPoint("ASMX", "The original .Net webservice"));
-			deckSlide.DetailPoints.Add(new SlideDetailPoint("WSE 2 & 3", "Beginnings of WS-* stack. Verbose, getting complex. Secure but brain numbing"));			
-			deckSlide.DetailPoints.Add(new SlideDetailPoint("WCF", "WS-FreakinEverything. All Windows communications unified. But the masses still were not happy."));
-			deckSlide.DetailPoints.Add(new SlideDetailPoint("MVC and custom views", "Building a pure REST Api via MVC and custom views was actually pretty easy."));
-			deckSlide.DetailPoints.Add(new SlideDetailPoint("WCF WebApi", "Trying to make WCF easier to build REST services."));
+			deckSlide.DetailPoints.Add(new SlideDetailPoint("Created by Google", "A Javascript framework to promote what good HTML development"));
+			deckSlide.DetailPoints.Add(new SlideDetailPoint("Code Reduction", "SPA - Single page applications"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Download", "You can get it from <strong>http://somewhere</strong>"));
 			
 			this.Add(deckSlide);
 
@@ -75,17 +74,18 @@ namespace Glav.AgularJSDemo.Web.Data
 			deckSlide = new Slide
 			{
 				SequenceNumber = sequenceNumber += 1,
-				Title = "REST - Simple wins",
-				SubTitle = "",
+				Title = "Some of the basics",
+				SubTitle = "Something simple to start us off",
 				TitleBlurb = "",
-				DetailHeading = "HTTP -just run with it",
-				DemoPage = ""
+				DetailHeading = "Key concepts and differences",
+				DemoPage = "AngularBasics.htm"
 			};
-			deckSlide.DetailPoints.Add(new SlideDetailPoint("Use what is available", "HTTP Content types, SSL, HTTP Status codes etc"));
-			deckSlide.DetailPoints.Add(new SlideDetailPoint("JSON &amp; XML", "The favoured few, but all media types can be supported"));
-			deckSlide.DetailPoints.Add(new SlideDetailPoint("Resource Based - HTTP Verb determines the action", "<em>http://host/contact/1</em> as opposed to <em>http://host/contact/get/1</em>"));
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("HATEOAS", "Hypermedia as the Engine of Application State. Community media formatters provide limited support <strong>http://hal.codeplex.com/</strong>, <strong>https://bitbucket.org/smichelotti/hal-media-type</strong> and <strong>https://github.com/JakeGinnivan/WebApi.Hal</strong>"));
-			this.Add(deckSlide);
+			deckSlide.DetailPoints.Add(new SlideDetailPoint("Data Model", "Data is your model/view model. Controllers interact with scope and data. Views are your HTML"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Controllers", "Controllers interact with data, other dependencies, and the scope. Controllers *should* never modify the DOM"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Scope", "Scope is applied to a view. This can be via databinding. AngularJS is 'anal' about scope management. "));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Declarative", "AngularJS is very declarative."));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Play by Angular rules", "AngularJS works well when playing by its rules. You can break them, but it can get painfull."));
+            this.Add(deckSlide);
 
 			// Slide 4
 			deckSlide = new Slide
