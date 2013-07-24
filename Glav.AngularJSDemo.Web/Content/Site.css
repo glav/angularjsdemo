@@ -786,6 +786,10 @@ tr.pager td {
 .hidden {
 	display:none;
 }
+
+#slide-list ul li {
+    display: block;
+}
 #slide-navigation {
 	/*margin-left: 130px;*/
 	font-size:15px;
@@ -900,3 +904,12 @@ section.main-content ol.round li h5.info-point {
     section.main-content ol.round li h5.info-point-orange {
         background-color: #E65025;
     }
+
+.angularjs-colour {
+    background-color: #e66363;
+}
+
+.knockoutjs-colour {
+    background-color: #223399;
+    opacity: .5;
+}

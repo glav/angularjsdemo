@@ -24,7 +24,7 @@
             <ul>
                 @foreach (var slide in Model)
                 {
-                    <li><a href="/#/slide/@slide.SequenceNumber">&nbsp;&nbsp;#@slide.SequenceNumber </a></li>
+                    <li><a href="/#/slide/@slide.SequenceNumber">&nbsp;&nbsp;@string.Format("#{0}-({1})",slide.SequenceNumber,slide.Title)</a></li>
                 }
 
             </ul>

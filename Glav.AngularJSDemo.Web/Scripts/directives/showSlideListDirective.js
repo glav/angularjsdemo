@@ -7,7 +7,7 @@
                 $(listElement).fadeIn();
             });
 
-            $(listElement + 'ul li a').on('click', function() {
+            $(listElement + ' ul li a').on('click', function() {
                 $(listElement).fadeOut();
             });
         }

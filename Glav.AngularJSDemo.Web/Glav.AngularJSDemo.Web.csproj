@@ -180,9 +180,14 @@
     <Content Include="Content\themes\base\jquery.ui.slider.css" />
     <Content Include="Content\themes\base\jquery.ui.tabs.css" />
     <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="demoPages\Angular-ko-compared\angularBindingController.js" />
+    <Content Include="demoPages\Angular-ko-compared\knockout-binding.js" />
     <Content Include="demoPages\AngularBasics.htm" />
-    <Content Include="demoPages\AngularBasics\bootstrap.js" />
     <Content Include="demoPages\AngularBasics\basicController.js" />
+    <Content Include="demoPages\BuiltInDirectives.htm" />
+    <Content Include="demoPages\BuiltInDirectives\directiveController.js" />
+    <Content Include="demoPages\bootstrap.js" />
+    <Content Include="demoPages\Angular-ko-compared.htm" />
     <Content Include="Doco\Glav.WebApiDemo.Web.XML" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -210,6 +215,7 @@
     <Content Include="Scripts\directives\showSlideListDirective.js" />
     <Content Include="Scripts\jquery-1.6.2-vsdoc.js" />
     <Content Include="Scripts\jquery-2.0.1.js" />
+    <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.0.6-development-only.js" />
     <Content Include="Scripts\factories\slideFactory.js" />
     <Content Include="Scripts\services\triggerService.js" />

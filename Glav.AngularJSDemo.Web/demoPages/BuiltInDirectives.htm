@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Built in Directives</title>
+    <link href="../Content/demoPages.css" rel="stylesheet" type="text/css" />
+    <script src="../Scripts/angular.js" type="text/javascript"></script>
+    <script src="bootstrap.js" type="text/javascript"></script>
+    <script src="BuiltInDirectives/directiveController.js" type="text/javascript"></script>
+</head>
+<body data-ng-app="angularDemo">
+    <section data-ng-controller="directiveController">
+        <h4>Built in features(via directives)</h4>
+        <label>Show section: </label><input type="checkbox" data-ng-model="showSection"/>
+        
+        <div data-ng-show="showSection" class="ngShowSection">
+            <p>Well hello....</p>
+        </div>
+
+        <hr />
+        
+        <label>Enter numbers in range of 0-100: </label><br/>
+        <input type="text" data-ng-model="numberValue"/><br/>
+        <span data-ng-class="{'numeric-error': isNumberValueInvalid}">{{feedbackMessage()}}</span>
+        
+    </section>
+
+</body>
+</html>

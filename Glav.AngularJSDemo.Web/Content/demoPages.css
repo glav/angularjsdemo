@@ -86,3 +86,14 @@ section ul.compact {
     width: 50%;
     margin: auto;
 }
+
+.ngShowSection {
+    width: 30%;
+    border: 1px dotted gray;
+    margin: auto;
+}
+
+.numeric-error {
+    color: red;
+    font-weight: bold;
+}

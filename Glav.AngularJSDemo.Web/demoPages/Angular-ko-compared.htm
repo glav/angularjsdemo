@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>AngularJS and KnockoutJS</title>
+    <link href="../Content/demoPages.css" rel="stylesheet" type="text/css" />
+    <script src="../Scripts/angular.js" type="text/javascript"></script>
+    <script src="../Scripts/knockout-2.2.0.js" type="text/javascript"></script>
+    <script src="bootstrap.js" type="text/javascript"></script>
+    <script src="Angular-ko-compared/angularBindingController.js" type="text/javascript"></script>
+</head>
+<body data-ng-app="angularDemo">
+    <section data-ng-controller="angularBindingController">
+        <h4>AngularJS Bound</h4>
+        <label>Data is: </label>
+        <ul>
+            <li>Name: {{angularData.firstName}} {{angularData.lastName}}</li>
+            <li>Age: {{angularData.age}}</li>
+            <li>Change Me: <input type="text" data-ng-model="angularData.lastName" /></li>
+        </ul>        
+        
+        <h4>KnockoutJS Bound</h4>
+        <label>Data is: </label>
+        <ul>
+            <li>Name: <span data-bind="text: firstName"></span> <span data-bind="text: lastName"></span></li>
+            <li>Age: <span data-bind="text: age"></span></li>
+            <li>Change Me: <input type="text" data-bind="value: lastName" /></li>
+        </ul>        
+    </section>
+
+        <script src="Angular-ko-compared/knockout-binding.js" type="text/javascript"></script>
+
+</body>
+</html>
