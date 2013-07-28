@@ -195,6 +195,8 @@
     <Content Include="Doco\Glav.WebApiDemo.Web.XML" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Images\AngularJS-Structure.png" />
+    <Content Include="Images\AngularJS.png" />
     <Content Include="Images\Arnie-di.jpg" />
     <Content Include="Images\Bacon-Coffee-Cup.jpg" />
     <Content Include="Images\Botox_Injection.jpg" />
