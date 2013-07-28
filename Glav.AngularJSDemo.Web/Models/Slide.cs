@@ -19,6 +19,7 @@ namespace Glav.AgularJSDemo.Web.Models
 		public string DetailHeading { get; set; }
 		public string DemoPage { get; set; }
 		public string ImageSource { get; set; }
+        public bool FullPageImage { get; set; }
 		public List<SlideDetailPoint> DetailPoints { get; set; }
 	}
 

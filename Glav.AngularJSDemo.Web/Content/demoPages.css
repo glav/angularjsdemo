@@ -97,3 +97,33 @@ section ul.compact {
     color: red;
     font-weight: bold;
 }
+
+.demo-text-emphasis {
+    color: #cf0b0b;
+}
+
+.demo-result-text-emphasis {
+    color: #9d6c67;
+    font-weight: 600;
+}
+
+.div-clickable {
+    border: 1px dotted #808080;
+    width: 12%;
+    padding: 2px;
+    margin: 4px auto;
+    cursor: default;
+}
+
+.row-even {
+    background-color: #d5f1ee;
+}
+
+.row-odd {
+    background-color: #cafbbe;
+}
+
+.simple-list {
+    list-style: none;
+    font-size: 1.2em;    
+}

@@ -19,6 +19,8 @@
             ];
 
             $scope.listSelection = $scope.listOfStuff[2].key;
+
+            $scope.listFilter = ''; // initially, nothing to filter
         }
 
         setupScopeData();

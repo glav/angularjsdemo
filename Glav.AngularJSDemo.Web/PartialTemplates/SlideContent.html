@@ -15,12 +15,13 @@
 
     <div id="slide-detail-content" data-ng-cloak class="data-ng-cloak">
         <section class="content-wrapper main-content clear-fix">
-            <div id="image-container" data-ng-show="showSlideImage">
+            <div id="image-container" data-ng-show="showSlideImage" data-ng-class="{'image-container-stick-right':slide.FullPageImage == false}">
                 <img data-ng-src='{{slide.ImageSource}}' alt='Slide Graphic' />
             </div>
+            
 
-            <h3>{{slide.DetailHeading}}</h3>
-            <ol class="round {{listWidth}}">
+            <h3 data--ng-show="!slide.FullPageImage">{{slide.DetailHeading}}</h3>
+            <ol class="round {{listWidth}}" data--ng-show="!slide.FullPageImage">
                 <li data-ng-repeat="detailPoint in slide.DetailPoints" class="{{detailPointClassNames[$index]}}">
                     <h5 data-ng-class="highlightClass(detailPoint)" ng-bind-html-unsafe="detailPoint.DetailPointHeader" ></h5>
                     <span data-ng-bind-html-unsafe="detailPoint.DetailPointText"></span>

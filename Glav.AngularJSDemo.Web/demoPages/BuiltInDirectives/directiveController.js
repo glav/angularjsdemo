@@ -5,6 +5,8 @@
             $scope.showSection = false;
             $scope.numberValue = 0;
             $scope.isNumberValueInvalid = false;
+
+            $scope.listOfData = ["one", "two", "three", "four", "five"];
         }
 
         $scope.feedbackMessage = function() {
@@ -22,4 +24,14 @@
         };
 
         setupScopeData();
-});
+
+        $scope.buttonClickCount = 0;
+        $scope.divClickCount = 0;
+
+        $scope.buttonClickHandler = function () {
+            $scope.buttonClickCount++;
+        };
+        $scope.divClickHandler = function () {
+            $scope.divClickCount++;
+        };
+    });

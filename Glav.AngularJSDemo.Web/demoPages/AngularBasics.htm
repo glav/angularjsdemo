@@ -1,33 +1,48 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title>Angular Basics</title>
-    <link href="../Content/demoPages.css" rel="stylesheet" type="text/css" />
-    <script src="../Scripts/angular.js" type="text/javascript"></script>
-    <script src="bootstrap.js" type="text/javascript"></script>
-    <script src="AngularBasics/basicController.js" type="text/javascript"></script>
-</head>
+    <head>
+        <title>Angular Basics</title>
+        <link href="../Content/demoPages.css" rel="stylesheet" type="text/css" />
+        <script src="../Scripts/angular.js" type="text/javascript"></script>
+        <script src="bootstrap.js" type="text/javascript"></script>
+        <script src="AngularBasics/basicController.js" type="text/javascript"></script>
+    </head>
+    <!--You can use ng-app, data-ng-app, ng:app-->
 <body data-ng-app="angularDemo">
     <section data-ng-controller="basicController">
         <h4>Basic Binding</h4>
-        <label>This is one way binding: </label><strong>{{whatAmI}}</strong><br />
-        <label>This is two way binding: </label><input type="text" data-ng-model="whatAmI" />
+        
+        <label>This is one way binding using <span class="demo-text-emphasis">{</span><span class="demo-text-emphasis">{</span>...<span class="demo-text-emphasis">}</span><span class="demo-text-emphasis">}</span> syntax: </label>
+            <strong>{{whatAmI}}</strong><br />
+        
+        <label>This is one way binding using <span class="demo-text-emphasis">ngBind</span> syntax: </label>
+            <strong data-ng-bind="whatAmI"></strong><br />
+        
+        <label>This is two way binding: </label>
+            <input type="text" data-ng-model="whatAmI" />
         
         <h4>Binding to an object with filtering</h4>
-        <label>Some Data Text: </label><span>{{someData.text}}</span><br />
-        <label>Some Data Date (date format): </label><span>{{someData.currentDate | date:'dd MMM yyyy'}}</span><br />
-        <label>Some Data Date (time format): </label><span>{{someData.currentDate | date:'hh:mm:ss'}}</span><br />
-        <label>Some Data Amount (currency format): </label><span>{{someData.amount | currency:'$'}}</span><br/>
-        <label>Some Data Amount + 10 (expression): </label><span>{{someData.amount + 10}}</span>
+        <pre>{ text: "Some text", currentDate: new Date(), amount: {{someData.amount}} }</pre>
+        <label>Some Data Text: </label>
+            <span class="demo-result-text-emphasis">{{someData.text}}</span><br />
+        <label>Some Data Date (date format): </label>
+            <span class="demo-result-text-emphasis">{{someData.currentDate | date:'dd MMM yyyy'}}</span><br />
+        <label>Some Data Date (time format): </label>
+            <span class="demo-result-text-emphasis">{{someData.currentDate | date:'hh:mm:ss'}}</span><br />
+        <label>Some Data Amount (currency format): </label>
+            <span class="demo-result-text-emphasis">{{someData.amount | currency:'$'}}</span><br/>
+        <label>Some Data Amount + 10 (expression): </label>
+            <span class="demo-result-text-emphasis">{{someData.amount + 10 | currency:'>>'}}</span>
         <br />
         <label>Change amount: </label><input type="number" data-ng-model="someData.amount"/>
         
-        <h4>Lists</h4>
+        <h4>Lists and Filters</h4>
         
         <div class="half-width">
             <div class="hang-left">
-                <ul data-ng-repeat="item in listOfStuff" class="compact">
-                    <li>{{item.text}}</li>
+                <input type="text" placeholder="Text to filter" data-ng-model="listFilter"/>
+                <ul class="compact">
+                    <li data-ng-repeat="item in listOfStuff  | filter:{text: listFilter}" >{{item.text}}</li>
                 </ul>
             </div>
 

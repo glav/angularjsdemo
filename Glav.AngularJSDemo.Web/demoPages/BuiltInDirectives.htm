@@ -9,8 +9,9 @@
 </head>
 <body data-ng-app="angularDemo">
     <section data-ng-controller="directiveController">
-        <h4>Built in features(via directives)</h4>
-        <label>Show section: </label><input type="checkbox" data-ng-model="showSection"/>
+        <h4>ngShow</h4>
+        <label>Show section: </label>
+        <input type="checkbox" data-ng-model="showSection"/>
         
         <div data-ng-show="showSection" class="ngShowSection">
             <p>Well hello....</p>
@@ -18,10 +19,26 @@
 
         <hr />
         
+       
+        <h4>ngClick</h4>
+        <label>Yes, this is rocket science</label>
+        <div ng:click="divClickHandler()" class="div-clickable">I am a Div element</div>
+        <button data-ng-click="buttonClickHandler()">Click me</button><br />
+        <label>Button Clicked {{buttonClickCount}} times, Div Clicked {{divClickCount}} times</label>
+        
+        <hr />
+        
+        <h4>ngClass</h4>
         <label>Enter numbers in range of 0-100: </label><br/>
         <input type="text" data-ng-model="numberValue"/><br/>
         <span data-ng-class="{'numeric-error': isNumberValueInvalid}">{{feedbackMessage()}}</span>
         
+        <hr />
+
+        <h4>Alternating rows with <span class="demo-text-emphasis">ngClassEven</span> and <span class="demo-text-emphasis">ngClassOdd</span></h4>
+        <ul class="simple-list">
+            <li data-ng-repeat="item in listOfData" data-ng-class-even="'row-even'" data-ng-class-odd="'row-odd'">{{item}}</li>
+        </ul>
     </section>
 
 </body>
