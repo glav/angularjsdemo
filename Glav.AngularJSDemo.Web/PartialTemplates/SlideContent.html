@@ -1,15 +1,17 @@
 ﻿    <section class="featured heading">
-        <div class="content-wrapper">
+        <div  data-ng-class="{'content-wrapper':true, 'block-heading':slide.BlockHeadingStyle}">
             <hgroup class="title">
                 <h1 >{{slide.Title}}</h1>
-                <h2>{{slide.SubTitle}}</h2>
             </hgroup>
-            <p>{{slide.TitleBlurb}}</p>
         </div>
-        <div class="access-area">
-            <input type="text" id="slide-feedback" />
-            <button id="submit-slide-feedback">Submit Feedback</button>
-            <span id="feedback-posted-message"></span>
+        <!--        <div class="access-area">
+                        <input type="text" id="slide-feedback" />
+                        <button id="submit-slide-feedback">Submit Feedback</button>
+                        <span id="feedback-posted-message"></span>
+                    </div>-->
+        <div class="sub-title">
+                <h2>{{slide.SubTitle}}</h2>
+                <p>{{slide.TitleBlurb}}</p>
         </div>
     </section>
 

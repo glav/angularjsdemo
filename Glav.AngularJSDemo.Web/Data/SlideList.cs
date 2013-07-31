@@ -25,6 +25,7 @@ namespace Glav.AgularJSDemo.Web.Data
 				TitleBlurb = "This site was built with AngularJS",
 				DetailHeading = "Access this demo at http://angularjsdemo.azurewebsites.net",
 				DemoPage = "",
+                BlockHeadingStyle=true,
 				ImageSource = "/images/angularjs.png"
 				 
 
