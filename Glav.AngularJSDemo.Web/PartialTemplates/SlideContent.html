@@ -23,7 +23,7 @@
             <h3 data--ng-show="!slide.FullPageImage">{{slide.DetailHeading}}</h3>
             <ol class="round {{listWidth}}" data--ng-show="!slide.FullPageImage">
                 <li data-ng-repeat="detailPoint in slide.DetailPoints" class="{{detailPointClassNames[$index]}}">
-                    <h5 data-ng-class="highlightClass(detailPoint)" ng-bind-html-unsafe="detailPoint.DetailPointHeader" ></h5>
+                    <h5 data-ng-class="highlightClass(detailPoint)" ng-bind-html-unsafe="detailPoint.DetailPointHeader"></h5>
                     <span data-ng-bind-html-unsafe="detailPoint.DetailPointText"></span>
                 </li>
             </ol>

@@ -25,7 +25,7 @@ namespace Glav.AgularJSDemo.Web.Data
 				TitleBlurb = "This site was built with AngularJS",
 				DetailHeading = "Access this demo at http://angularjsdemo.azurewebsites.net",
 				DemoPage = "",
-				ImageSource = "/images/sleeping.jpg"
+				ImageSource = "/images/angularjs.png"
 				 
 
 			};
@@ -65,7 +65,7 @@ namespace Glav.AgularJSDemo.Web.Data
 			};
 			deckSlide.DetailPoints.Add(new SlideDetailPoint("Created by Google", "A Javascript framework to promote what good HTML development"));
 			deckSlide.DetailPoints.Add(new SlideDetailPoint("Code Reduction", "SPA - Single page applications"));
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("Download", "You can get it from <strong>http://somewhere</strong>"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Download", "You can get it from <strong><a href='http://angularjs.org/' target='_blank'>http://angularjs.org/</a></strong>"));
 			
 			this.Add(deckSlide);
 
@@ -130,12 +130,53 @@ namespace Glav.AgularJSDemo.Web.Data
                 SubTitle = "Separating concerns",
                 TitleBlurb = "Breaking the monolithic application into pieces",
                 DetailHeading = "Service and/or Factory",
-                DemoPage = ""
+                DemoPage = "ServicesFactories.htm"
             };
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Typically provide external data", "But can do anything you want really"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Performing data access", "The cononical example via XMLHTTP"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Services and Factories very similar", "How they are written and constructed differs somewhat"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Separation into services/factories good for DI and Testability", ""));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Effectively all are application singletons", ""));
+            this.Add(deckSlide);
+
+            deckSlide = new Slide
+            {
+                SequenceNumber = sequenceNumber += 1,
+                Title = "Built in services",
+                SubTitle = "Angular gives you a range of supporting services",
+                TitleBlurb = "",
+                DetailHeading = "Here are just a few",
+                DemoPage = "BuiltInServices.htm"
+            };
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("$resource/ $http", "Make async HTTP requests"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("$route", "An angular wrapper around the location object with some extras"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("$location", "An angular wrapper around the location object with some extras"));
+            this.Add(deckSlide);
+
+            deckSlide = new Slide
+            {
+                SequenceNumber = sequenceNumber += 1,
+                Title = "Routing",
+                SubTitle = "One way that Angular really flexes its muscle",
+                TitleBlurb = "Automatic history support",
+                DetailHeading = "",
+                DemoPage = "Routing.htm"
+            };
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Partial views", "Make async HTTP requests"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("$route", "An angular wrapper around the location object with some extras"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("$location", "An angular wrapper around the location object with some extras"));
+            this.Add(deckSlide);
+
+            deckSlide = new Slide
+            {
+                SequenceNumber = sequenceNumber += 1,
+                Title = "Directives - Angulars super power",
+                SubTitle = "Bending HTML to your needs",
+                TitleBlurb = "",
+                DetailHeading = "",
+                DemoPage = "ServicesFactories.htm"
+            };
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Components that can manipulate the DOM", "Processed in the Angular lifecycle where DOM changes are picked up"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("", ""));
             this.Add(deckSlide);
 
@@ -150,11 +191,10 @@ namespace Glav.AgularJSDemo.Web.Data
                 DemoPage = "Angular-ko-compared.htm"
             };
             deckSlide.DetailPoints.Add(new SlideDetailPoint("KnockoutJS - Mostly Imperitive via observables", "Wraps object properties and fires notifications when a property changes") { HighlightClass = HeaderHighlightCssType.KnockoutJS });
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("AngularJS - Declarative/Plain JSON", "Uses 'dirty data/dirty checking' to compare an object before and after its 'digest' phase to see if changes are made") { HighlightClass = HeaderHighlightCssType.AngularJS });
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("AngularJS - Declarative/Plain JSON", "Uses 'dirty data/dirty checking' to compare an object before and after") { HighlightClass = HeaderHighlightCssType.AngularJS });
             deckSlide.DetailPoints.Add(new SlideDetailPoint("KnockoutJS - Is all about data binding.", "Provides very rich data binding operations") { HighlightClass = HeaderHighlightCssType.KnockoutJS });
             deckSlide.DetailPoints.Add(new SlideDetailPoint("AngularJS - Does more than just data binding", "Dependency injection, reuseable components via directives, form validation etc") { HighlightClass = HeaderHighlightCssType.AngularJS });
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("KnockoutJS & AngularJS - jQuery not required", "Both work fine without jQuery, Angular contains jqLite jQuery subset but uses jQuery if available."));
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("Performance - AngularJS is a little faster", "<a href='http://jsperf.com/angularjs-vs-knockoutjs/10' target='_blank'>http://jsperf.com/angularjs-vs-knockoutjs/10</a>"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("jQuery not required, AngularJS is a little faster", "<a href='http://jsperf.com/angularjs-vs-knockoutjs/10' target='_blank'>http://jsperf.com/angularjs-vs-knockoutjs/10</a>"));
             
             this.Add(deckSlide);
             

@@ -6,16 +6,37 @@
     <script src="../Scripts/angular.js" type="text/javascript"></script>
     <script src="bootstrap.js" type="text/javascript"></script>
     <script src="ServicesFactories/servicesFactoriesController.js" type="text/javascript"></script>
+    <script src="ServicesFactories/anotherController.js" type="text/javascript"></script>
     <script src="ServicesFactories/servicesFactoriesService.js" type="text/javascript"></script>
     <script src="ServicesFactories/servicesFactoriesFactory.js" type="text/javascript"></script>
 </head>
 <body data-ng-app="angularDemo">
-    <section data-ng-controller="directiveController">
-        <h4>ngShow</h4>
-        <label>Show section: </label>
-        <input type="checkbox" data-ng-model="showSection"/>
+    <section data-ng-controller="servicesFactoriesController">
+        <h4>Invoke Service and Factory (servicesFactoriesController)</h4>
+        <label>Call factory method: </label>
+        <button data-ng-click="callFactory()">Call factory</button><br />
+
+        <label>Call service method: </label>
+        <button data-ng-click="callService()">Call service</button><br />
+        <br />
+        <label>Factory property value: {{factoryPropertyValue()}}</label>
+        <label>Service property value: {{servicePropertyValue()}}</label>
         
     </section>
+    
+    <section data-ng-controller="anotherController">
+        <h4>Invoke Service and Factory (anotherController)</h4>
+        <label>Call factory method: </label>
+        <button data-ng-click="callFactory()">Call factory</button><br />
+
+        <label>Call service method: </label>
+        <button data-ng-click="callService()">Call service</button><br />
+        <br />
+        <label>Factory property value: {{factoryPropertyValue()}}</label>
+        <label>Service property value: {{servicePropertyValue()}}</label>
+    </section>
+    <hr />
+
 
 </body>
 </html>

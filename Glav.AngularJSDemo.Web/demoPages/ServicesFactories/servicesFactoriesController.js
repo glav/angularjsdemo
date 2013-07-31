@@ -1,8 +1,17 @@
 ﻿window.app.controller('servicesFactoriesController',
-    function ($scope) {
+    function ($scope, servicesFactoriesFactory, servicesFactoriesService) {
 
-        function setupScopeData() {
-        }
+        $scope.callFactory = function() {
+            servicesFactoriesFactory.performService();
+        };
+        $scope.callService = function () {
+            servicesFactoriesService.performService();
+        };
 
-        setupScopeData();
-});
+        $scope.factoryPropertyValue = function() {
+            return servicesFactoriesFactory.factoryProperty;
+        };
+        $scope.servicePropertyValue = function () {
+            return servicesFactoriesService.serviceProperty;
+        };
+    });
