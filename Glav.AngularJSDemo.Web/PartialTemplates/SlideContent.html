@@ -9,9 +9,9 @@
                         <button id="submit-slide-feedback">Submit Feedback</button>
                         <span id="feedback-posted-message"></span>
                     </div>-->
-        <div class="sub-title">
-                <h2>{{slide.SubTitle}}</h2>
-                <p>{{slide.TitleBlurb}}</p>
+        <div class="sub-title" data-ng-show="slide.SubTitle != '' && slide.TitleBlurb != ''">
+                <h2 data-ng-show="slide.SubTitle != ''">{{slide.SubTitle}}</h2>
+                <p data-ng-show="slide.TitleBlurb != ''">{{slide.TitleBlurb}}</p>
         </div>
     </section>
 
@@ -26,7 +26,7 @@
             <ol class="round {{listWidth}}" data--ng-show="!slide.FullPageImage">
                 <li data-ng-repeat="detailPoint in slide.DetailPoints" class="{{detailPointClassNames[$index]}}">
                     <h5 data-ng-class="highlightClass(detailPoint)" ng-bind-html-unsafe="detailPoint.DetailPointHeader"></h5>
-                    <span data-ng-bind-html-unsafe="detailPoint.DetailPointText"></span>
+                    <span class="detail-point-text" data-ng-bind-html-unsafe="detailPoint.DetailPointText"></span>
                 </li>
             </ol>
         </section>

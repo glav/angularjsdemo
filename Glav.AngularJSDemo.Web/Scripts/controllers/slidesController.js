@@ -2,7 +2,7 @@
     function ($rootScope, $scope, slideFactory, triggerService, $route) {
 
         $scope.detailPointClassNames = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
-        $scope.highlightPointClassNames = ["", "info-point-blue", "info-point-purple", "info-point-teal", "info-point-orange", "angularjs-colour","knockoutjs-colour"];
+        $scope.highlightPointClassNames = ["", "info-point-accent5", "info-point-accent4", "info-point-accent3", "info-point-accent2", "angularjs-colour","knockoutjs-colour"];
 
         initialise();
 

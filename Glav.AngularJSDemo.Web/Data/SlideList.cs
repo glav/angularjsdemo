@@ -22,17 +22,17 @@ namespace Glav.AgularJSDemo.Web.Data
 				SequenceNumber = sequenceNumber,
 				Title = "AngularJS Superheroic famework,and ASP.Net too...",
 				SubTitle="Paul Glavich - ASP.NET MVP, ASPInsider, Author, CTO Saasu.com",
-				TitleBlurb = "This site was built with AngularJS",
-				DetailHeading = "Access this demo at http://angularjsdemo.azurewebsites.net",
+                TitleBlurb = "Access this demo at http://angularjsdemo.azurewebsites.net",
+				DetailHeading = "",
 				DemoPage = "",
                 BlockHeadingStyle=true,
 				ImageSource = "/images/angularjs.png"
 				 
 
 			};
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("@glav", "Twitter" ) { HighlightClass = HeaderHighlightCssType.InfoPointBlue });
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("http://weblogs.asp.net/pglavich","Blog") { HighlightClass = HeaderHighlightCssType.InfoPointTeal });
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("glav@theglavs.com","Email") { HighlightClass = HeaderHighlightCssType.InfoPointOrange });
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("@glav", "Twitter" ) { HighlightClass = HeaderHighlightCssType.InfoPointAccent5 });
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("http://weblogs.asp.net/pglavich","Blog") { HighlightClass = HeaderHighlightCssType.InfoPointAccent3 });
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("glav@theglavs.com","Email") { HighlightClass = HeaderHighlightCssType.InfoPointAccent2 });
 			this.Add(deckSlide);
 
 			// Slide 1
@@ -42,7 +42,7 @@ namespace Glav.AgularJSDemo.Web.Data
 				Title = "Agenda",
 				SubTitle = "",
 				TitleBlurb = "",
-				DetailHeading = "Stuff we will cover",
+				DetailHeading = "",
 				DemoPage = "",
 				ImageSource = "/images/agenda.jpg"
 			};
@@ -57,7 +57,7 @@ namespace Glav.AgularJSDemo.Web.Data
 			{
 				SequenceNumber = sequenceNumber += 1,
 				Title = "But first, what is it?",
-				SubTitle = "So you can do Databinding, so what?",
+				SubTitle = "",
 				TitleBlurb = "",
 				DetailHeading = "The high level bits",
 				DemoPage = "",
@@ -94,9 +94,9 @@ namespace Glav.AgularJSDemo.Web.Data
 			{
 				SequenceNumber = sequenceNumber += 1,
 				Title = "Some of the basics",
-				SubTitle = "Something simple to start us off",
+				SubTitle = "",
 				TitleBlurb = "",
-				DetailHeading = "Key concepts and differences",
+				DetailHeading = "",
 				DemoPage = "AngularBasics.htm"
 			};
             deckSlide.DetailPoints.Add(new SlideDetailPoint("View", "This is your HTML"));
@@ -113,7 +113,7 @@ namespace Glav.AgularJSDemo.Web.Data
 				SequenceNumber = sequenceNumber += 1,
 				Title = "Basics - Built in 'directives'",
 				SubTitle = "You will hear the word directives a lot",
-				TitleBlurb = "Being declarative has lots of benefits",
+				TitleBlurb = "",
 				DetailHeading = "Some typical examples of declarative behaviour",
 				DemoPage = "BuiltInDirectives.htm"
 			};
@@ -208,10 +208,10 @@ namespace Glav.AgularJSDemo.Web.Data
 				TitleBlurb = "",
 				DetailHeading = "Further information"
 			};
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("https://github.com/thinktecture/Thinktecture.Web.Http", "Thinktecture.Web.Http repository") { HighlightClass = HeaderHighlightCssType.InfoPointBlue });
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("WebApiBloggers.com", "Bunch of people blogging solely around WebApi") { HighlightClass = HeaderHighlightCssType.InfoPointPurple });
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("http://webapidemo.azurewebsites.net", "Online version of this demo") { HighlightClass = HeaderHighlightCssType.InfoPointTeal });
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("https://bitbucket.org/glav/glav.webapidemo", "Complete source code for entire deck and demo") { HighlightClass = HeaderHighlightCssType.InfoPointOrange });
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("https://github.com/thinktecture/Thinktecture.Web.Http", "Thinktecture.Web.Http repository") { HighlightClass = HeaderHighlightCssType.InfoPointAccent5 });
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("WebApiBloggers.com", "Bunch of people blogging solely around WebApi") { HighlightClass = HeaderHighlightCssType.InfoPointAccent4 });
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("http://webapidemo.azurewebsites.net", "Online version of this demo") { HighlightClass = HeaderHighlightCssType.InfoPointAccent3 });
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("https://bitbucket.org/glav/glav.webapidemo", "Complete source code for entire deck and demo") { HighlightClass = HeaderHighlightCssType.InfoPointAccent2 });
 			this.Add(deckSlide);
 
         }
@@ -220,10 +220,10 @@ namespace Glav.AgularJSDemo.Web.Data
     public enum HeaderHighlightCssType
     {
         None,
-        InfoPointBlue,
-        InfoPointPurple,
-        InfoPointTeal,
-        InfoPointOrange,
+        InfoPointAccent5,
+        InfoPointAccent4,
+        InfoPointAccent3,
+        InfoPointAccent2,
         AngularJS,
         KnockoutJS
     }
