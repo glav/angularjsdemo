@@ -67,7 +67,7 @@ h4, h5, h6 {
 }
 
 h1 {
-    font-size: 40pt;
+    font-size: 36pt;
 }
 
 h2 {
@@ -98,13 +98,6 @@ h5, h6 {
     background-color: #002050;
     clear: both;
     padding-bottom: 5px;
-}
-
-div.access-area {
-    background: url("../Images/heroAccent.png") no-repeat;
-    height: 30px;
-    margin: 0 auto;
-    max-width: 1040px;
 }
 
 .main-content {
@@ -142,7 +135,7 @@ footer {
 }
 
     .featured .content-wrapper {
-        padding: 10px 40px 10px 40px;
+        padding: 0 40px 10px 40px;
     }
 
     .featured div.block-heading {
@@ -615,20 +608,20 @@ a.twitter {
 }
 
     #slide-navigation a {
-        border: 1px solid #00CC00;
+        border: 1px solid #5fa0d0;
         -moz-border-radius: 3px;
         -webkit-border-radius: 3px;
         border-radius: 5px;
         margin: 2px 15px;
-        padding: 2px 15px;
-        background-color: #37B2A9;
+        padding: 2px 35px;
+        background-color: #0072C6;
         color: white;
         text-decoration: none;
         font-weight: 700;
     }
 
         #slide-navigation a.demo-link {
-            border: 1px solid #4591A7;
+            border: 1px solid #e26f22;
             -moz-border-radius: 3px;
             -webkit-border-radius: 3px;
             border-radius: 5px;
@@ -637,7 +630,7 @@ a.twitter {
             margin-left: 50px;
             margin-top: 15px;
             padding: 2px 15px;
-            background-color: #3192CC;
+            background-color: #DC3C00;
             color: #fff;
             text-decoration: none;
             font-weight: bold;
@@ -713,7 +706,7 @@ section.main-content ol.full-width {
 section.main-content ol.round li h5.info-point {
     color: #ffffff;
     border-radius: 4px 4px 4px 4px;
-    box-shadow: 5px 5px #CCCCCC;
+    /*box-shadow: 5px 5px #CCCCCC;*/
     padding: 3px 24px;
     /*width: 650px;*/
 }
@@ -743,7 +736,6 @@ section.main-content ol.round li h5.info-point-accent5 {
 
 .knockoutjs-colour {
     background-color: #223399;
-    opacity: .5;
 }
 
 span.detail-point-text {

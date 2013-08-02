@@ -198,17 +198,9 @@
     <Content Include="Global.asax" />
     <Content Include="Images\AngularJS-Structure.png" />
     <Content Include="Images\AngularJS.png" />
-    <Content Include="Images\Arnie-di.jpg" />
     <Content Include="Images\Bacon-Coffee-Cup.jpg" />
-    <Content Include="Images\Botox_Injection.jpg" />
     <Content Include="Images\agenda.jpg" />
-    <Content Include="Images\ddd-Slide1.PNG" />
-    <Content Include="Images\IdeasBubbles.png" />
     <Content Include="Images\LastSlide.png" />
-    <Content Include="Images\pipeline-delegatinghandler.png" />
-    <Content Include="Images\pipeline-mediaformatter.png" />
-    <Content Include="Images\sleeping.jpg" />
-    <Content Include="Images\web-to-rest.png" />
     <Content Include="PartialTemplates\SlideContent.html" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\bootstrap\demoAppBootstrap.js" />
@@ -241,7 +233,6 @@
     <Content Include="Images\bullet.png" />
     <Content Include="Images\facebook.png" />
     <Content Include="Images\findHosting.png" />
-    <Content Include="Images\heroAccent.png" />
     <Content Include="Images\NuGetGallery.png" />
     <Content Include="Images\orderedList0.png" />
     <Content Include="Images\orderedList1.png" />
@@ -254,7 +245,6 @@
     <Content Include="Images\orderedList8.png" />
     <Content Include="Images\orderedList9.png" />
     <Content Include="Images\twitter.png" />
-    <Content Include="Images\windowsLive.png" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />

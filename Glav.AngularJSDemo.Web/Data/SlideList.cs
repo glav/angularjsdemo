@@ -51,8 +51,8 @@ namespace Glav.AgularJSDemo.Web.Data
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Part 3: Tips, tricks, likes, dislikes, advanced", "What we found was good and also bad, plus some gotchas"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Wrap up", "Loud applause and high eval scores."));
 			this.Add(deckSlide);
-			
-			// Slide 2
+
+            // Slide 2
 			deckSlide = new Slide
 			{
 				SequenceNumber = sequenceNumber += 1,
@@ -129,7 +129,7 @@ namespace Glav.AgularJSDemo.Web.Data
                 SequenceNumber = sequenceNumber += 1,
                 Title = "Services and Factories",
                 SubTitle = "Separating concerns",
-                TitleBlurb = "Breaking the monolithic application into pieces",
+                TitleBlurb = "",
                 DetailHeading = "Service and/or Factory",
                 DemoPage = "ServicesFactories.htm"
             };
@@ -188,7 +188,7 @@ namespace Glav.AgularJSDemo.Web.Data
                 Title = "A brief comparison- AngularJS and KnockoutJS",
                 SubTitle = "KnockoutJS has data bindng too you know",
                 TitleBlurb = "",
-                DetailHeading = "Similar but different",
+                DetailHeading = "",
                 DemoPage = "Angular-ko-compared.htm"
             };
             deckSlide.DetailPoints.Add(new SlideDetailPoint("KnockoutJS - Mostly Imperitive via observables", "Wraps object properties and fires notifications when a property changes") { HighlightClass = HeaderHighlightCssType.KnockoutJS });
@@ -209,8 +209,8 @@ namespace Glav.AgularJSDemo.Web.Data
 				DetailHeading = "Further information"
 			};
             deckSlide.DetailPoints.Add(new SlideDetailPoint("https://github.com/thinktecture/Thinktecture.Web.Http", "Thinktecture.Web.Http repository") { HighlightClass = HeaderHighlightCssType.InfoPointAccent5 });
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("WebApiBloggers.com", "Bunch of people blogging solely around WebApi") { HighlightClass = HeaderHighlightCssType.InfoPointAccent4 });
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("http://webapidemo.azurewebsites.net", "Online version of this demo") { HighlightClass = HeaderHighlightCssType.InfoPointAccent3 });
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("http://angularjs.azurewebsites.net", "Online version of this demo") { HighlightClass = HeaderHighlightCssType.AngularJS });
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("WebApiBloggers.com", "Bunch of people blogging solely around WebApi") { HighlightClass = HeaderHighlightCssType.InfoPointAccent3 });
             deckSlide.DetailPoints.Add(new SlideDetailPoint("https://bitbucket.org/glav/glav.webapidemo", "Complete source code for entire deck and demo") { HighlightClass = HeaderHighlightCssType.InfoPointAccent2 });
 			this.Add(deckSlide);
 
