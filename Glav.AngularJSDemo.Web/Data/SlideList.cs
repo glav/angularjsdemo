@@ -103,7 +103,7 @@ namespace Glav.AgularJSDemo.Web.Data
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Controllers", "Controllers interact with data, other dependencies, and the scope. Controllers *should* never modify the DOM"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Data Model / Scope", "Data is your model/view model contained within the scope. Controllers interact with scope and data. Views are your HTML"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Declarative ng-*, data-ng-*, ng:*", "AngularJS is very declarative and forgiving. ng-show/data-ng-show/...."));
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("Play by Angular rules", "AngularJS works well when playing by its rules. You can break them, but it can get painfull."));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("$scope / $rootScope", ""));
             this.Add(deckSlide);
 
            
@@ -150,7 +150,6 @@ namespace Glav.AgularJSDemo.Web.Data
                 DemoPage = "BuiltInServices.htm"
             };
             deckSlide.DetailPoints.Add(new SlideDetailPoint("$resource/ $http", "Make async HTTP requests"));
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("$route", "An angular wrapper around the location object with some extras"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("$location", "An angular wrapper around the location object with some extras"));
             this.Add(deckSlide);
 
@@ -163,9 +162,8 @@ namespace Glav.AgularJSDemo.Web.Data
                 DetailHeading = "",
                 DemoPage = "Routing.htm"
             };
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("Partial views", "Make async HTTP requests"));
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("$route", "An angular wrapper around the location object with some extras"));
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("$location", "An angular wrapper around the location object with some extras"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Partial views", "Make async HTTP requests to get a different view"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Browser history support", "Yes, the back button works"));
             this.Add(deckSlide);
 
             deckSlide = new Slide
@@ -175,10 +173,10 @@ namespace Glav.AgularJSDemo.Web.Data
                 SubTitle = "Bending HTML to your needs",
                 TitleBlurb = "",
                 DetailHeading = "",
-                DemoPage = "ServicesFactories.htm"
+                DemoPage = "Directives.htm"
             };
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Components that can manipulate the DOM", "Processed in the Angular lifecycle where DOM changes are picked up"));
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("", ""));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("AEC", "Attributes, Elements, Classes"));
             this.Add(deckSlide);
 
             // Slide 5
@@ -198,7 +196,103 @@ namespace Glav.AgularJSDemo.Web.Data
             deckSlide.DetailPoints.Add(new SlideDetailPoint("jQuery not required, AngularJS is a little faster", "<a href='http://jsperf.com/angularjs-vs-knockoutjs/10' target='_blank'>http://jsperf.com/angularjs-vs-knockoutjs/10</a>"));
             
             this.Add(deckSlide);
-            
+
+            // Slide 12
+            deckSlide = new Slide
+            {
+                SequenceNumber = sequenceNumber += 1,
+                Title = "Forms and validation",
+                SubTitle = "",
+                TitleBlurb = "",
+                DetailHeading = ""
+            };
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("", ""));
+            this.Add(deckSlide);
+
+            // Slide 12
+            deckSlide = new Slide
+            {
+                SequenceNumber = sequenceNumber += 1,
+                Title = "Minification",
+                SubTitle = "",
+                TitleBlurb = "",
+                DetailHeading = ""
+            };
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("", ""));
+            this.Add(deckSlide);
+
+            // Slide 12
+            deckSlide = new Slide
+            {
+                SequenceNumber = sequenceNumber += 1,
+                Title = "Using Angular in an ASP.Net app #1",
+                SubTitle = "",
+                TitleBlurb = "",
+                DetailHeading = ""
+            };
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Start off with a good folder structure", ""));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Get rid of jQuery validation / unobtrusive", "Can work but can also cause conflicts - standardise on one"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Keep jQuery", "Sure it doesn't need it,but its much nicer with it"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Load Angular early", "Typically in <head> section, all others at bottom as per good practice"));
+            this.Add(deckSlide);
+
+            // Slide 12
+            deckSlide = new Slide
+            {
+                SequenceNumber = sequenceNumber += 1,
+                Title = "Using Angular in an ASP.Net app #2",
+                SubTitle = "",
+                TitleBlurb = "",
+                DetailHeading = ""
+            };
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Conditionals in common view to enable Angular", "May not always want Angular invoked, particularly legacy apps"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Dont be tempted to change DOM in controllers", "Use directives, particularly when 3rd party components"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("", ""));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("", ""));
+            this.Add(deckSlide);
+
+            // Slide 12
+            deckSlide = new Slide
+            {
+                SequenceNumber = sequenceNumber += 1,
+                Title = "Testing",
+                SubTitle = "",
+                TitleBlurb = "",
+                DetailHeading = ""
+            };
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("", ""));
+            this.Add(deckSlide);
+
+            // Slide 12
+            deckSlide = new Slide
+            {
+                SequenceNumber = sequenceNumber += 1,
+                Title = "Tips n Tricks - General",
+                SubTitle = "",
+                TitleBlurb = "",
+                DetailHeading = ""
+            };
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Keep controllers lean", "Same as in MVC"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("", ""));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("", ""));
+            this.Add(deckSlide);
+
+            // Slide 12
+            deckSlide = new Slide
+            {
+                SequenceNumber = sequenceNumber += 1,
+                Title = "Tips n Tricks - Debugging",
+                SubTitle = "",
+                TitleBlurb = "",
+                DetailHeading = ""
+            };
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("debugger; tends to break angular", "Sometimes ok - use console.log a lot"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Look for thrown exception in console", "Angular is good at reporting these"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Batarang", "Excellent chrome add in"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("", ""));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("", ""));
+            this.Add(deckSlide);
+
             // Slide 12
 			deckSlide = new Slide
 			{

@@ -188,6 +188,11 @@
     <Content Include="demoPages\BuiltInDirectives\directiveController.js" />
     <Content Include="demoPages\bootstrap.js" />
     <Content Include="demoPages\Angular-ko-compared.htm" />
+    <Content Include="demoPages\Routing.htm" />
+    <Content Include="demoPages\Routing\partialViewController.js" />
+    <Content Include="demoPages\Routing\routingController.js" />
+    <Content Include="demoPages\Routing\partial-view1.tpl..html" />
+    <Content Include="demoPages\Routing\routing-config.js" />
     <Content Include="demoPages\ServicesFactories.htm" />
     <Content Include="demoPages\ServicesFactories\anotherController.js" />
     <Content Include="demoPages\ServicesFactories\servicesFactoriesFactory.js" />
