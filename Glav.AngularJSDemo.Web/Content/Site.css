@@ -647,6 +647,7 @@ a.twitter {
     background-color: White;
     width: 500px;
     right: 80px;
+    z-index: 99;
 }
 
     #slide-list ul li {

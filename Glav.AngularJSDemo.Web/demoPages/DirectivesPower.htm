@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Routing</title>
+    <link href="../Content/demoPages.css" rel="stylesheet" type="text/css" />
+    <script src="../Scripts/angular.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery-2.0.1.js"></script>
+    <script src="bootstrap.js" type="text/javascript"></script>
+    <script src="DirectivesPower/SimpleClickerDirective.js"></script>
+    <script src="DirectivesPower/WidgetDirective.js"></script>
+</head>
+<body data-ng-app="angularDemo">
+    <section>
+        <h4>Directives</h4>
+        
+        <div class="simple-directive-items">
+            <p>Simple clickable directive</p>
+            <!--Attribute style-->
+            <button data-simple-clicker>data-simple-clicker</button>
+            <!--Element Style-->
+            <simple-clicker>
+                <div>
+                    &lt;simple-clicker&gt;&lt;/simple-clicker&gt;
+                </div>
+            </simple-clicker>
+            <!--Class style-->
+            <div class="simple-clicker">
+                Using a class to attach directive
+            </div>
+
+        </div>
+
+        
+        <hr />
+        <label>Especially good for re-usable components</label>
+        <div class="widgets">
+            <!--Custom HTML-->
+            <widget data-square data-clickable></widget>
+        
+            <br />
+            <!--via Attributes-->
+            <div data-widget="circle" clickable></div>
+        
+           <!--Comment style-->
+           <!-- directive: widget disc -->
+        </div>
+    </section>
+
+</body>
+</html>

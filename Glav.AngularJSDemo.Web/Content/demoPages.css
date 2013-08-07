@@ -5,21 +5,23 @@
 }
 
 p {
-	font-size:1.3em;
+    font-size: 1.3em;
 }
 
 h1 {
-	font-size: 2.0 em;
-}
-h2 {
-	font-size: 1.8 em;
-}
-h3 {
-	font-size: 1.6 em;
+    font-size: 2.0 em;
 }
 
-h1,h2,h3,h4 {
-	text-align:center;
+h2 {
+    font-size: 1.8 em;
+}
+
+h3 {
+    font-size: 1.6 em;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
 }
 
 
@@ -28,56 +30,61 @@ body {
     background-color: #fff;
     border-top: solid 10px #000;
     color: #333;
-    font-size:1.3em;
+    font-size: 1.3em;
     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
     margin: 0;
     padding: 0;
 }
 
 section {
-	margin: 5px 0;
-	padding: 10px 0;
-	text-align:center;
+    margin: 5px 0;
+    padding: 10px 0;
+    text-align: center;
 }
 
-section span.demo-info {
-	color: #B49254;
-	padding: 0 15px;
-}
-	section span.demo-info:before {
-		content:"(";
-	}
-	section span.demo-info:after {
-		content:")";
-	}
-	
+    section span.demo-info {
+        color: #B49254;
+        padding: 0 15px;
+    }
+
+        section span.demo-info:before {
+            content: "(";
+        }
+
+        section span.demo-info:after {
+            content: ")";
+        }
+
 input.small {
-	width: 60px;
+    width: 60px;
 }
 
 #help-container {
-	text-align:left;
-	margin-left: 30px;
+    text-align: left;
+    margin-left: 30px;
 }
 
-#help-container span.method,#help-container span.doco,#help-container span.parms {
-	margin-left: 35px;
-}
-#help-container span.parm-item {
-	margin-left:40px;
-}
+    #help-container span.method, #help-container span.doco, #help-container span.parms {
+        margin-left: 35px;
+    }
+
+    #help-container span.parm-item {
+        margin-left: 40px;
+    }
 
 section ul.compact {
     list-style: circle;
     margin: auto;
 }
+
     section ul.compact li {
-        text-align:left;
+        text-align: left;
     }
 
 .hang-left {
     float: left;
 }
+
 .hang-right {
     float: right;
 }
@@ -125,5 +132,24 @@ section ul.compact {
 
 .simple-list {
     list-style: none;
-    font-size: 1.2em;    
+    font-size: 1.2em;
 }
+
+div.simple-directive-items div {
+    display: inline;
+    margin: 0 15px;
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+}
+
+div.widgets {
+    margin: auto;
+    width: 50%;
+}
+
+    div.widgets div {
+        margin: auto;
+        width: 50%;
+        display: inline;
+    }

@@ -1,0 +1,13 @@
+﻿<h3>View 3</h3>
+
+<h2>&lt;&lt;&nbsp;{{viewThree.title}}&nbsp;&gt;&gt;</h2>
+
+<hr />
+
+<label>Enter something: </label>
+<span>Hint: enter 'hide'</span>
+<input type="text" data-ng-model="data.text" />
+
+<p data-ng-show="data.text !='hide'">You entered: {{data.text}}</p>
+
+<p data-ng-show="data.text !='hide'" >{{viewThree.blurb}}</p>

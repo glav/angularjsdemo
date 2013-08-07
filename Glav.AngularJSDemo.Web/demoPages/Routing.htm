@@ -6,12 +6,18 @@
     <script src="../Scripts/angular.js" type="text/javascript"></script>
     <script src="bootstrap.js" type="text/javascript"></script>
     <script src="Routing/routing-config.js" type="text/javascript"></script>
-    <script src="Routing/routingController.js"></script>
     <script src="Routing/partialViewController.js"></script>
+    <script src="Routing/selectViewController.js"></script>
 </head>
 <body data-ng-app="angularDemo">
-    <section data-ng-controller="routingController">
+    <section>
         <h4>Lets get routed</h4>
+        <label>View Control</label><br />
+        <a href="#/view/1">View 1</a>
+        <a href="#/view/2">View 2</a>
+        <a href="#/view/3">View 3</a>
+        <hr />
+        <div data-ng-view></div>
     </section>
 
 </body>
