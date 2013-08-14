@@ -101,7 +101,7 @@ namespace Glav.AgularJSDemo.Web.Data
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Module", "You must define a module ngApp='..'. Controllers, scope, services are within the module"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("View", "This is your HTML"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Controllers", "Controllers interact with data, other dependencies, and the scope. Controllers *should* never modify the DOM"));
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("Scope", "Scope is your view model. Your data + view specifics go into the scope. Controllers interact with scope and data."));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Scope ($scope/$rootScope)", "Scope is your view model. Your data + view specifics go into the scope. Controllers interact with scope and data."));
             this.Add(deckSlide);
 
             // Slide 3
@@ -183,14 +183,16 @@ namespace Glav.AgularJSDemo.Web.Data
             deckSlide = new Slide
             {
                 SequenceNumber = sequenceNumber += 1,
-                Title = "Directives - Angulars super power",
+                Title = "Directives - AngularJS super power",
                 SubTitle = "Bending HTML to your needs",
                 TitleBlurb = "",
                 DetailHeading = "",
                 DemoPage = "DirectivesPower.htm"
             };
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Components that can manipulate the DOM", "Processed in the Angular lifecycle where DOM changes are picked up"));
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("AEC", "Attributes, Elements, Classes"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("AECM", "Attributes, Elements, Classes, Comments"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Beware using 'E'lements in IE", "Need to use a shim"));
+
             this.Add(deckSlide);
 
             // Slide 12
@@ -200,9 +202,13 @@ namespace Glav.AgularJSDemo.Web.Data
                 Title = "Forms and validation",
                 SubTitle = "",
                 TitleBlurb = "",
-                DetailHeading = ""
+                DetailHeading = "",
+                DemoPage = "FormValidation.htm"
             };
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("", ""));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Complements HTML 5 validation", ""));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Works well, but a little clunky", ""));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Dynamically adds/removes classes, sets values", "ng-valid, ng-invalid, form.$invalid etc"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("novalidate attribute", "Usually need this to prevent HTML 5 validation taking over"));
             this.Add(deckSlide);
 
             // Slide 12
@@ -214,7 +220,8 @@ namespace Glav.AgularJSDemo.Web.Data
                 TitleBlurb = "",
                 DetailHeading = ""
             };
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("", ""));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Need to code with Minification in mind", ""));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Often, examples are *not* minification safe", ""));
             this.Add(deckSlide);
 
             // Slide 12
@@ -224,12 +231,13 @@ namespace Glav.AgularJSDemo.Web.Data
                 Title = "Using Angular in an ASP.Net app #1",
                 SubTitle = "",
                 TitleBlurb = "",
-                DetailHeading = ""
+                DetailHeading = "",
+                ImageSource="/images/folder-structure.png"
             };
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Start off with a good folder structure", ""));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Get rid of jQuery validation / unobtrusive", "Can work but can also cause conflicts - standardise on one"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Keep jQuery", "Sure it doesn't need it,but its much nicer with it"));
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("Load Angular early", "Typically in <head> section, all others at bottom as per good practice"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Load Angular early", "Typically in &lt;head&gt; section, all others at bottom inline with good practice"));
             this.Add(deckSlide);
 
             // Slide 12
@@ -242,7 +250,7 @@ namespace Glav.AgularJSDemo.Web.Data
                 DetailHeading = ""
             };
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Conditionals in common view to enable Angular", "May not always want Angular invoked, particularly legacy apps"));
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("Dont be tempted to change DOM in controllers", "Use directives, particularly when 3rd party components"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Test in release mode", "Ensure you are bundling/minification safe"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("", ""));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("", ""));
             this.Add(deckSlide);
@@ -284,11 +292,12 @@ namespace Glav.AgularJSDemo.Web.Data
                 Title = "Tips n Tricks - General",
                 SubTitle = "",
                 TitleBlurb = "",
-                DetailHeading = ""
+                DetailHeading = "",
+                DemoPage="AngularUI.htm"
             };
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Keep controllers lean", "Same as in MVC"));
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("", ""));
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("", ""));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Dont be tempted to change DOM in controllers", "Use directives, particularly when using 3rd party components"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Use AngularUI", "Its awesome"));
             this.Add(deckSlide);
 
             // Slide 12

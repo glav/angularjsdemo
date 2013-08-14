@@ -153,3 +153,57 @@ div.widgets {
         width: 50%;
         display: inline;
     }
+
+
+/*
+        Form validation
+*/
+section form {
+    margin: 4px 10px;
+}
+    section.form-validation ul {
+        list-style: none;
+        height: 5em;
+    }
+        section.form-validation input[type='submit'] {
+            float: left;
+        }
+
+        section.form-validation ul li {
+            clear: both;
+        }
+            section.form-validation ul li label, section.form-validation ul li input {
+                width: 20%;
+                float: left;
+            }
+            section.form-validation ul li input.ng-invalid {
+                background-color: #ffcac1;
+            }
+
+    section form.ng-invalid fieldset {
+        border-color: red;
+        border-width: 5px;
+    }
+        section form.ng-invalid fieldset legend {
+            color: #ff4444;
+        }
+
+    section form.ng-valid fieldset {
+        border-color: green;
+        border-width: 3px;
+    }
+        section form.ng-valid fieldset legend {
+            color: #008800;
+        }
+
+        section form ul li sub {
+            font-size: small;
+            font-style: italic;
+            float: left;
+            margin-left: 10px;
+        }
+
+.validation-error-phone {
+    position: absolute;
+    margin-left: -230px;
+}

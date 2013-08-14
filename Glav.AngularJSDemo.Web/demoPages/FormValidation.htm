@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Forms and Validation</title>
+    <link href="../Content/demoPages.css" rel="stylesheet" type="text/css" />
+    <link href="../Content/bootstrap.tooltips.css" rel="stylesheet" />
+    <script src="../Scripts/angular.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery-2.0.1.js"></script>
+    <script src="FormValidation/bootstrap.js" type="text/javascript"></script>
+    <script src="FormValidation/formController.js"></script>
+    <script src="FormValidation/ui-bootstrap-tpls-0.3.0.js"></script>
+    <script src="FormValidation/validationErrorMarkDirective.js"></script>
+</head>
+<body data-ng-app="angularDemo">
+    <section class="form-validation">
+        <h4>Hows your form?</h4>
+        
+        <form name="myForm" novalidate 
+                    data-ng-submit="saveForm()" data-ng-controller="formController">
+            <fieldset>
+                <legend>Please complete the form</legend>
+                <ul>
+                    <li>
+                        <label>Name: </label>
+                        <input type="text" name="name"
+                               required 
+                               data-ng-model="personDetails.name" 
+                               placeholder="Enter full name" />
+                    </li>
+                    <li>
+                        <label>Age: </label>
+                        <input type="number"  name="age"
+                               required 
+                               data-ng-model="personDetails.age" 
+                                placeholder="Enter your age"/>
+                    </li>
+                    <li>
+                        <label>Phone: </label>
+                        <input type="text" name="phone" 
+                               data-ng-required="personDetails.age >= 14" 
+                               data-validation-error-mark="validation-error-phone" 
+                               data-validation-error-message="Please enter phone number" 
+                               data-ng-model="personDetails.phone" 
+                               ng-pattern="/\d{8}/"
+                               placeholder="Enter Phone no"/>
+                        <sub>(only required if >= 14 years of age)</sub>
+                    </li>
+                </ul>
+                <input type="submit" data-ng-show="myForm.$valid" value="Save"/>
+            </fieldset>
+
+            <span>$scope.myForm.$invalid = {{myForm.$invalid}}</span>  <br />     
+            <span>$scope.myForm.$valid = {{myForm.$valid}}</span>  <br />       
+            <span>$scope.myForm.name.$valid = {{myForm.name.$valid}}</span>  <br />       
+            <span>$scope.myForm.name.$error = {{myForm.name.$error}}</span>       
+        </form> 
+        
+    </section>
+
+</body>
+</html>

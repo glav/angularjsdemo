@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Angular UI</title>
+    <link href="../Content/demoPages.css" rel="stylesheet" type="text/css" />
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <script src="../Scripts/angular.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery-2.0.1.js"></script>
+    <script src="AngularUI/ui-bootstrap-tpls-0.5.0.js"></script>
+    <script src="AngularUI/bootstrap.js" type="text/javascript"></script>
+    <script src="AngularUI/uiController.js" type="text/javascript"></script>
+</head>
+
+<body data-ng-app="angularDemo">
+    <section data-ng-controller="uiController">
+        <h4>Some AngularUI Examples</h4>
+        
+        <label>A tooltip: </label>
+        <input data-ng-model="tooltipData" tooltip="Hi, I am tooltip!" tooltip-trigger="click" tooltip-placement="right" />
+    
+        <label>Choose a date</label>
+        <input type="text" datepicker-popup="dd-MMMM-yyyy" ng-model="dateData" open="opened" min="'2000-01-01'" max="'2015-06-22'" datepicker-options="dateOptions" ng-required="true" />
+        <button class="btn" ng-click="open()"><i class="icon-calendar"></i></button>
+    </section>
+</body>
+</html>

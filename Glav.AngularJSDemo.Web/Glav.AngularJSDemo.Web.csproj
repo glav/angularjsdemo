@@ -152,6 +152,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
     <Content Include="Content\demoPages.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -184,13 +185,26 @@
     <Content Include="demoPages\Angular-ko-compared\knockout-binding.js" />
     <Content Include="demoPages\AngularBasics.htm" />
     <Content Include="demoPages\AngularBasics\basicController.js" />
+    <Content Include="demoPages\AngularUI\ui-bootstrap-tpls-0.5.0.js" />
+    <Content Include="demoPages\AngularUI\uiController.js" />
+    <Content Include="demoPages\AngularUI\bootstrap.js" />
     <Content Include="demoPages\BuiltInDirectives.htm" />
     <Content Include="demoPages\BuiltInDirectives\directiveController.js" />
     <Content Include="demoPages\bootstrap.js" />
     <Content Include="demoPages\Angular-ko-compared.htm" />
+    <Content Include="demoPages\AngularUI.htm" />
+    <Content Include="demoPages\FormValidation.htm" />
     <Content Include="demoPages\DirectivesPower.htm" />
     <Content Include="demoPages\DirectivesPower\WidgetDirective.js" />
     <Content Include="demoPages\DirectivesPower\SimpleClickerDirective.js" />
+    <Content Include="demoPages\FormValidation\bootstrap.js" />
+    <Content Include="demoPages\FormValidation\formController.js" />
+    <Content Include="demoPages\FormValidation\ui-bootstrap-tpls-0.3.0.js" />
+    <Content Include="demoPages\FormValidation\validationErrorMarkDirective.js" />
+    <Content Include="img\glyphicons-halflings-white.png" />
+    <Content Include="img\glyphicons-halflings.png" />
+    <Content Include="demoPages\Minification\minifcationUnSafeController.js" />
+    <Content Include="demoPages\Minification\minifcationSafeController.js" />
     <Content Include="demoPages\Routing.htm" />
     <Content Include="demoPages\Routing\selectViewController.js" />
     <Content Include="demoPages\Routing\select-view.tpl.html" />
@@ -211,7 +225,9 @@
     <Content Include="Images\AngularJS.png" />
     <Content Include="Images\Bacon-Coffee-Cup.jpg" />
     <Content Include="Images\agenda.jpg" />
+    <Content Include="Images\folder-structure.PNG" />
     <Content Include="Images\LastSlide.png" />
+    <Content Include="Images\validation-red.png" />
     <Content Include="PartialTemplates\SlideContent.html" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\bootstrap\demoAppBootstrap.js" />
