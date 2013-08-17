@@ -328,10 +328,10 @@ namespace Glav.AgularJSDemo.Web.Data
 				TitleBlurb = "",
 				DetailHeading = "Further information"
 			};
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("https://github.com/thinktecture/Thinktecture.Web.Http", "Thinktecture.Web.Http repository") { HighlightClass = HeaderHighlightCssType.InfoPointAccent5 });
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("http://angularjs.org/", "AngularJS") { HighlightClass = HeaderHighlightCssType.InfoPointAccent2 });
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("https://github.com/glav/angularjsdemo", "Complete source code for entire deck and demo") { HighlightClass = HeaderHighlightCssType.InfoPointAccent5 });
             deckSlide.DetailPoints.Add(new SlideDetailPoint("http://angularjs.azurewebsites.net", "Online version of this demo") { HighlightClass = HeaderHighlightCssType.AngularJS });
             deckSlide.DetailPoints.Add(new SlideDetailPoint("http://angular-ui.github.io/", "AngularUI") { HighlightClass = HeaderHighlightCssType.InfoPointAccent3 });
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("https://bitbucket.org/glav/glav.webapidemo", "Complete source code for entire deck and demo") { HighlightClass = HeaderHighlightCssType.InfoPointAccent2 });
 			this.Add(deckSlide);
 
         }
