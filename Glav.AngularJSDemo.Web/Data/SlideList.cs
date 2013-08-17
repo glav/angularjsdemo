@@ -282,7 +282,9 @@ namespace Glav.AgularJSDemo.Web.Data
                 TitleBlurb = "",
                 DetailHeading = ""
             };
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("", ""));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Built from groundp up to be testable", ""));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Plenty of samples for Jasmine(Karma) and QUnit", ""));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Integrate early into build process", ""));
             this.Add(deckSlide);
 
             // Slide 12
@@ -298,6 +300,7 @@ namespace Glav.AgularJSDemo.Web.Data
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Keep controllers lean", "Same as in MVC"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Dont be tempted to change DOM in controllers", "Use directives, particularly when using 3rd party components"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Use AngularUI", "Its awesome"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Dont bother with Angular animation until AngularJS 1.2", "It has changed a lot since prior releases. Currently 1.2 in RC"));
             this.Add(deckSlide);
 
             // Slide 12
@@ -309,7 +312,7 @@ namespace Glav.AgularJSDemo.Web.Data
                 TitleBlurb = "",
                 DetailHeading = ""
             };
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("debugger; tends to break angular", "Sometimes ok - use console.log a lot"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("debugger; tends to break/stop angular", "Sometimes ok - use console.log a lot"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Look for thrown exception in console", "Angular is good at reporting these"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Batarang", "Excellent chrome add in"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("", ""));
@@ -327,7 +330,7 @@ namespace Glav.AgularJSDemo.Web.Data
 			};
             deckSlide.DetailPoints.Add(new SlideDetailPoint("https://github.com/thinktecture/Thinktecture.Web.Http", "Thinktecture.Web.Http repository") { HighlightClass = HeaderHighlightCssType.InfoPointAccent5 });
             deckSlide.DetailPoints.Add(new SlideDetailPoint("http://angularjs.azurewebsites.net", "Online version of this demo") { HighlightClass = HeaderHighlightCssType.AngularJS });
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("WebApiBloggers.com", "Bunch of people blogging solely around WebApi") { HighlightClass = HeaderHighlightCssType.InfoPointAccent3 });
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("http://angular-ui.github.io/", "AngularUI") { HighlightClass = HeaderHighlightCssType.InfoPointAccent3 });
             deckSlide.DetailPoints.Add(new SlideDetailPoint("https://bitbucket.org/glav/glav.webapidemo", "Complete source code for entire deck and demo") { HighlightClass = HeaderHighlightCssType.InfoPointAccent2 });
 			this.Add(deckSlide);
 

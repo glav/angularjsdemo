@@ -201,10 +201,15 @@
     <Content Include="demoPages\FormValidation\formController.js" />
     <Content Include="demoPages\FormValidation\ui-bootstrap-tpls-0.3.0.js" />
     <Content Include="demoPages\FormValidation\validationErrorMarkDirective.js" />
+    <Content Include="Images\darth-vader.jpg" />
+    <Content Include="Images\designer-fun.jpg" />
+    <Content Include="Images\likaboss.jpg" />
+    <Content Include="Images\lmao.jpg" />
+    <Content Include="Images\OneMotherOfABook.jpg" />
+    <Content Include="Images\whos-awesome.jpg" />
     <Content Include="img\glyphicons-halflings-white.png" />
     <Content Include="img\glyphicons-halflings.png" />
-    <Content Include="demoPages\Minification\minifcationUnSafeController.js" />
-    <Content Include="demoPages\Minification\minifcationSafeController.js" />
+    <Content Include="demoPages\Minification\minifcationControllers.js" />
     <Content Include="demoPages\Routing.htm" />
     <Content Include="demoPages\Routing\selectViewController.js" />
     <Content Include="demoPages\Routing\select-view.tpl.html" />
@@ -239,6 +244,7 @@
     <Content Include="Scripts\Custom\slideDeckManager.js" />
     <Content Include="Scripts\Custom\Home.js" />
     <Content Include="Scripts\directives\showSlideListDirective.js" />
+    <Content Include="Scripts\directives\SlideKeyboardNavigationDirective.js" />
     <Content Include="Scripts\jquery-1.6.2-vsdoc.js" />
     <Content Include="Scripts\jquery-2.0.1.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />

@@ -15,12 +15,47 @@
     <section data-ng-controller="uiController">
         <h4>Some AngularUI Examples</h4>
         
+        <!--Tooltip-->
         <label>A tooltip: </label>
-        <input data-ng-model="tooltipData" tooltip="Hi, I am tooltip!" tooltip-trigger="click" tooltip-placement="right" />
+        <input data-ng-model="tooltipData" tooltip="Hi, I am tooltip!" tooltip-trigger="mouseenter" tooltip-placement="right" />
     
-        <label>Choose a date</label>
-        <input type="text" datepicker-popup="dd-MMMM-yyyy" ng-model="dateData" open="opened" min="'2000-01-01'" max="'2015-06-22'" datepicker-options="dateOptions" ng-required="true" />
-        <button class="btn" ng-click="open()"><i class="icon-calendar"></i></button>
+        <!--Dialog / Modal-->
+        <section>
+            <button class="btn-large" data-ng-click="openModal()" >Open Modal</button>
+            <div modal="shouldModalOpen" options="modalOptions">
+                <div class="modal-header">
+                    <h3>I'm a modal!</h3>
+                </div>
+                <div class="modal-body">
+                    <p>Dear Microsoft, please give me a Surface Pro</p>        
+                </div>            
+                <div class="modal-footer">
+                    <button data-ng-click="closeModal()">Close</button>
+                </div>
+            </div>
+        </section>
+        
+        <!--Star rating control-->
+        <section>
+            <h4>There are not enough stars to accurately rate how awesome this presentation is</h4>
+            <div class="star-rating" rating max="ratingMax" value="starRating" data-on-hover="hoveringOver(value)" 
+                 data-on-leave="hoverRating = starRating"></div>
+            <span class="badge badge-inverse">&nbsp;&nbsp;{{hoverRating}}/{{ratingMax}}</span>
+            <p>Your rating is: {{starRating}}</p>
+        </section>
+        
+        <!--Carousel-->
+        <section class="carousel">
+            <carousel interval="myInterval">
+                <slide ng-repeat="slide in slides" >
+                    <img ng-src="{{slide.image}}" style="margin:auto;">
+                    <div class="carousel-caption">
+                        <p>{{slide.text}}</p>
+                    </div>
+                </slide>
+            </carousel>
+        </section>
+
     </section>
 </body>
 </html>

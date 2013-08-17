@@ -19,12 +19,13 @@ namespace Glav._WebApiDemo.Web
 		        "~/Scripts/angular.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/angularJSDemo").Include(
-                        "~/Scripts/bootstrap/demoAppBootstrap.js").Include(
-                        "~/Scripts/bootstrap/demoAppRouteConfig.js").Include(
-                        "~/Scripts/controllers/slidesController.js").Include(
-                        "~/Scripts/controllers/navigationController.js").Include(
-                        "~/Scripts/services/triggerService.js").Include(
-                        "~/Scripts/directives/showSlideListDirective.js").Include(
+                        "~/Scripts/bootstrap/demoAppBootstrap.js",
+                        "~/Scripts/bootstrap/demoAppRouteConfig.js",
+                        "~/Scripts/controllers/slidesController.js",
+                        "~/Scripts/controllers/navigationController.js",
+                        "~/Scripts/services/triggerService.js",
+                        "~/Scripts/directives/showSlideListDirective.js",
+                        "~/Scripts/directives/SlideKeyboardNavigationDirective.js",
                         "~/Scripts/factories/slideFactory.js"));
 		}
 	}
