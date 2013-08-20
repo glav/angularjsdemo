@@ -237,3 +237,12 @@ section.carousel {
 .carousel-indicators {
     display: none;
 }
+
+section.built-in-services div button {
+    padding: 4px 6px;
+    margin-bottom: 4px;
+}
+
+section.built-in-services span {
+    margin-left: 5px;
+}

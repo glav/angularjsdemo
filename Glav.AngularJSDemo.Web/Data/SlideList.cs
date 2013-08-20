@@ -164,7 +164,7 @@ namespace Glav.AgularJSDemo.Web.Data
                 DemoPage = "BuiltInServices.htm"
             };
             deckSlide.DetailPoints.Add(new SlideDetailPoint("$resource/ $http", "Make async HTTP requests"));
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("$location", "An angular wrapper around the location object with some extras"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("$location, $window, $timeout, $compile etc..", "Many are angular wrappers around existing items such as window. Many more...."));
             this.Add(deckSlide);
 
             deckSlide = new Slide
@@ -209,6 +209,20 @@ namespace Glav.AgularJSDemo.Web.Data
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Works well, but a little clunky", ""));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Dynamically adds/removes classes, sets values", "ng-valid, ng-invalid, form.$invalid etc"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("novalidate attribute", "Usually need this to prevent HTML 5 validation taking over"));
+            this.Add(deckSlide);
+
+            // Slide 12
+            deckSlide = new Slide
+            {
+                SequenceNumber = sequenceNumber += 1,
+                Title = "I18n and L10n",
+                SubTitle = "Internationalisation and Localisation",
+                TitleBlurb = "",
+                DetailHeading = "",
+                DemoPage="i18n.htm"
+            };
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Angular supports i18n/l10n for datetime, number and currency filters", "Need to include the correct localisation file upfront"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("ngPluralize directive for plural forms", ""));
             this.Add(deckSlide);
 
             // Slide 12

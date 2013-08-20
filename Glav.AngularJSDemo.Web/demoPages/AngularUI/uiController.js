@@ -1,11 +1,6 @@
 ﻿window.app.controller('uiController', ['$scope', '$timeout',
     function ($scope, $timeout) {
-        $scope.open = function () {
-            //$timeout(function () {
-            $scope.opened = true;
-            //});
-        };
-
+        
         // For the modal dialog
         $scope.closeModal = function () {
             $scope.shouldModalOpen = false;
@@ -26,7 +21,7 @@
         };
 
         // Carousel
-        $scope.myInterval = 15000;
+        $scope.myInterval = 12000;
         $scope.slides = [
             { image: '/images/lmao.jpg', text: "L M A O" },
             { image: '/images/OneMotherOfABook.jpg', text: "Read the manual" },

@@ -9,11 +9,6 @@
                 var isDisc = attributes.disc !== undefined || attributes.widget === 'disc';
                 var isSquare = attributes.square !== undefined || attributes.widget === 'square';
                 var isClickable = attributes.clickable !== undefined || attributes.widget === 'clickable';
-                var useFx = attributes.useFx !== undefined || attributes.widget === 'useFx';
-
-                console.log('isCicrle=' + isCircle);
-                console.log('isSquare=' + isSquare);
-                console.log('isClickable=' + isClickable);
 
                 element
                     .css('position', 'relative');
@@ -44,8 +39,6 @@
                         ctx.arc(140, 70, 60, 0, Math.PI * 2, true);
                         ctx.closePath();
                         ctx.stroke();
-                        //ctx.fillStyle = 'white';
-                        //ctx.arc(140, 70, 20, 0, Math.PI * 2, true);
                     }
 
                 }
@@ -63,10 +56,6 @@
                         }
 
                     });
-                }
-
-                if (useFx) {
-
                 }
 
             }

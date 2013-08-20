@@ -1,6 +1,5 @@
 ﻿window.app.controller('selectViewController',
     function ($scope, $route) {
-        console.log('hello');
 
         function getViewNoFromRoute() {
             var param = null;
