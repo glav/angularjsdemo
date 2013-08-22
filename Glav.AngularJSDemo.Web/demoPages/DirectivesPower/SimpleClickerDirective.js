@@ -1,7 +1,7 @@
 ﻿window.app.directive('simpleClicker',
     function () {
         return {
-            restrict: 'AECM', // (Attribute, element, class, comment)
+            restrict: 'AEC', // (Attribute, element, class, not comment)
 
             link: function (scope, element, attributes) {
 

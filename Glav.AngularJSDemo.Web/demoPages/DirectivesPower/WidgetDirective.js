@@ -28,7 +28,7 @@
                     var ctx = canvasElement.getContext('2d');
                     ctx.fillStyle = 'black';
                     ctx.beginPath();
-                    if (isCircle) {
+                    if (isDisc) {
                         ctx.arc(140, 70, 70, 0, Math.PI * 2, true);
                         ctx.closePath();
                         ctx.fill();

@@ -21,7 +21,7 @@
         };
 
         // Carousel
-        $scope.myInterval = 12000;
+        $scope.myInterval = 10000;
         $scope.slides = [
             { image: '/images/lmao.jpg', text: "L M A O" },
             { image: '/images/OneMotherOfABook.jpg', text: "Read the manual" },

@@ -95,32 +95,16 @@ namespace Glav.AgularJSDemo.Web.Data
                 SubTitle = "",
                 TitleBlurb = "",
                 DetailHeading = "",
-                DemoPage = ""
-            };
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("Declarative ng-*, data-ng-*, ng:*", "AngularJS is very declarative and forgiving. ng-show/data-ng-show/...."));
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("Module", "You must define a module ngApp='..'. Controllers, scope, services are within the module"));
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("View", "This is your HTML"));
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("Controllers", "Controllers interact with data, other dependencies, and the scope. Controllers *should* never modify the DOM"));
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("Scope ($scope/$rootScope)", "Scope is your view model. Your data + view specifics go into the scope. Controllers interact with scope and data."));
-            this.Add(deckSlide);
-
-            // Slide 3
-			deckSlide = new Slide
-			{
-				SequenceNumber = sequenceNumber += 1,
-				Title = "More on the basics",
-				SubTitle = "",
-				TitleBlurb = "",
-				DetailHeading = "",
+                ImageSource="/images/html-screen1.png",
 				DemoPage = "AngularBasics.htm"
-			};
+            };
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Declarative ng-*, data-ng-*, ng:*", "AngularJS is very declarative but forgiving."));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Module", "Define a module ng-app='..'. Controllers, scope, services are within the module"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Controller - Scope - View", "No DOM manipulation"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Service / Factories / Directives", "Re-usable components that can provide data (services) or modify DOM (directives)"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Data Model", "Any JSON/POJO data. All or part can be placed into scope to populate the view"));
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("Services / Factories", "Components that typically provide data or other service to other components"));
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("Directives", "Re-usable components that typically perform DOM manipulation"));
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("", ""));
             this.Add(deckSlide);
 
-           
             // Slide 4
 			deckSlide = new Slide
 			{
@@ -281,7 +265,7 @@ namespace Glav.AgularJSDemo.Web.Data
             };
             deckSlide.DetailPoints.Add(new SlideDetailPoint("KnockoutJS - Mostly Imperitive via observables", "Wraps object properties and fires notifications when a property changes") { HighlightClass = HeaderHighlightCssType.KnockoutJS });
             deckSlide.DetailPoints.Add(new SlideDetailPoint("AngularJS - Declarative/Plain JSON", "Uses 'dirty data/dirty checking' to compare an object before and after") { HighlightClass = HeaderHighlightCssType.AngularJS });
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("KnockoutJS - Is all about data binding.", "Provides very rich data binding operations") { HighlightClass = HeaderHighlightCssType.KnockoutJS });
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("KnockoutJS - Is all about data binding.", "Provides very rich data binding operations. Not really fair comparison. Durandal would be better to compare.") { HighlightClass = HeaderHighlightCssType.KnockoutJS });
             deckSlide.DetailPoints.Add(new SlideDetailPoint("AngularJS - Does more than just data binding", "Dependency injection, reuseable components via directives, form validation etc") { HighlightClass = HeaderHighlightCssType.AngularJS });
             deckSlide.DetailPoints.Add(new SlideDetailPoint("jQuery not required, AngularJS is a little faster", "<a href='http://jsperf.com/angularjs-vs-knockoutjs/10' target='_blank'>http://jsperf.com/angularjs-vs-knockoutjs/10</a>"));
 
@@ -296,7 +280,7 @@ namespace Glav.AgularJSDemo.Web.Data
                 TitleBlurb = "",
                 DetailHeading = ""
             };
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("Built from groundp up to be testable", ""));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Built from ground up to be testable", ""));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Plenty of samples for Jasmine(Karma) and QUnit", ""));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Integrate early into build process", ""));
             this.Add(deckSlide);

@@ -1,9 +1,6 @@
 ﻿window.app.factory('dataFactory',
     function ($http) {
-        // you could run some code here to initialise the factory
-        var initialValue = Math.round(Math.random() * 10);
 
-        // Then return an object to use
         return {
             getData: function() {
                 return $http(
