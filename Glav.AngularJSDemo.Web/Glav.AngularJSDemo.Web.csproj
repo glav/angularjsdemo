@@ -203,6 +203,7 @@
     <Content Include="demoPages\i18n\angular-locale_zh-cn.js" />
     <Content Include="demoPages\i18n\i18nController.js" />
     <Content Include="Images\html-screen1.PNG" />
+    <Content Include="Images\keep-calm-and-follow-the-prime-directive.png" />
     <Content Include="Images\radar-transparent.gif" />
     <Content Include="demoPages\BuiltInServices\servicesController.js" />
     <Content Include="demoPages\BuiltInServices\dataFactory.js" />
@@ -219,7 +220,12 @@
     <Content Include="Images\likaboss.jpg" />
     <Content Include="Images\lmao.jpg" />
     <Content Include="Images\OneMotherOfABook.jpg" />
+    <Content Include="Images\robot-factory1.jpg" />
+    <Content Include="Images\specialised routing.gif" />
+    <Content Include="Images\SuperPowers.jpg" />
+    <Content Include="Images\validation1.jpg" />
     <Content Include="Images\whos-awesome.jpg" />
+    <Content Include="Images\yin-yang-i18n-l10n.jpg" />
     <Content Include="img\glyphicons-halflings-white.png" />
     <Content Include="img\glyphicons-halflings.png" />
     <Content Include="demoPages\Minification\minifcationControllers.js" />

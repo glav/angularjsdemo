@@ -113,7 +113,8 @@ namespace Glav.AgularJSDemo.Web.Data
 				SubTitle = "You will hear the word directives a lot",
 				TitleBlurb = "",
 				DetailHeading = "Some typical examples of declarative behaviour",
-				DemoPage = "BuiltInDirectives.htm"
+				DemoPage = "BuiltInDirectives.htm",
+                ImageSource = "/images/keep-calm-and-follow-the-prime-directive.png"
 			};
 			deckSlide.DetailPoints.Add(new SlideDetailPoint("ngShow", "Conditionally hide/show elements in the DOM"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("ngClick", "Click handler on the scope"));
@@ -129,7 +130,8 @@ namespace Glav.AgularJSDemo.Web.Data
                 SubTitle = "Separating concerns",
                 TitleBlurb = "",
                 DetailHeading = "Service and/or Factory",
-                DemoPage = "ServicesFactories.htm"
+                DemoPage = "ServicesFactories.htm",
+                ImageSource="/images/robot-factory1.jpg"
             };
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Typically provide external data", "But can do anything you want really"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Performing data access", "The cononical example via XMLHTTP"));
@@ -158,7 +160,8 @@ namespace Glav.AgularJSDemo.Web.Data
                 SubTitle = "One way that Angular really flexes its muscle",
                 TitleBlurb = "Automatic history support",
                 DetailHeading = "",
-                DemoPage = "Routing.htm"
+                DemoPage = "Routing.htm",
+                ImageSource = "/images/specialised routing.gif"
             };
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Partial views", "Make async HTTP requests to get a different view"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Browser history support", "Yes, the back button works"));
@@ -171,7 +174,8 @@ namespace Glav.AgularJSDemo.Web.Data
                 SubTitle = "Bending HTML to your needs",
                 TitleBlurb = "",
                 DetailHeading = "",
-                DemoPage = "DirectivesPower.htm"
+                DemoPage = "DirectivesPower.htm",
+                ImageSource="/images/superpowers.jpg"
             };
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Components that can manipulate the DOM", "Processed in the Angular lifecycle where DOM changes are picked up"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("AECM", "Attributes, Elements, Classes, Comments"));
@@ -187,7 +191,8 @@ namespace Glav.AgularJSDemo.Web.Data
                 SubTitle = "",
                 TitleBlurb = "",
                 DetailHeading = "",
-                DemoPage = "FormValidation.htm"
+                DemoPage = "FormValidation.htm",
+                ImageSource="/images/validation1.jpg"
             };
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Complements HTML 5 validation", ""));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Works well, but a little clunky", ""));
@@ -203,7 +208,8 @@ namespace Glav.AgularJSDemo.Web.Data
                 SubTitle = "Internationalisation and Localisation",
                 TitleBlurb = "",
                 DetailHeading = "",
-                DemoPage="i18n.htm"
+                DemoPage="i18n.htm",
+                ImageSource = "/images/yin-yang-i18n-l10n.jpg"
             };
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Angular supports i18n/l10n for datetime, number and currency filters", "Need to include the correct localisation file upfront"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("ngPluralize directive for plural forms", ""));
