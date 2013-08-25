@@ -246,3 +246,13 @@ section.built-in-services div button {
 section.built-in-services span {
     margin-left: 5px;
 }
+
+section.i18n ul {
+    list-style: none;
+}
+    section.i18n ul li {
+        line-height: 1em;
+        margin: auto;
+        text-align: left;
+        width: 20%;    
+    }

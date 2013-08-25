@@ -12,11 +12,12 @@
         <script src="i18n/angular-locale_zh-cn.js"></script>
 -->
         <script src="bootstrap.js" type="text/javascript"></script>
+        <script src="i18n/routing-config.js"></script>
         <script src="i18n/i18nController.js" type="text/javascript"></script>
     </head>
     <!--You can use ng-app, data-ng-app, ng:app-->
 <body data-ng-app="angularDemo">
-    <section data-ng-controller="i18nController">
+    <section data-ng-controller="i18nController" class="i18n">
         <h4>i18n</h4>
         
         <p>Date: {{currentDateTime | date:"fullDate"}}</p>
@@ -25,12 +26,13 @@
         <p>Current Locate: {{localeId}}</p>
         
         <p>Potential attendee count at TechEd 2013: (pluralisation)
-        <ul ng:repeat="attendeeCount in attendees">
-            <li>
-                <ng-pluralize count="attendeeCount" when="attendeeForms"></ng-pluralize>
-            </li>
-        </ul>
+            <ul ng:repeat="attendeeCount in attendees">
+                <li>
+                    <ng-pluralize count="attendeeCount" when="attendeeForms"></ng-pluralize>
+                </li>
+            </ul>
         </p>
+        
     </section>
 
 </body>

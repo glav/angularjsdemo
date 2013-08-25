@@ -100,7 +100,7 @@ namespace Glav.AgularJSDemo.Web.Data
             };
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Declarative ng-*, data-ng-*, ng:*", "AngularJS is very declarative but forgiving."));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Module", "Define a module ng-app='..'. Controllers, scope, services are within the module"));
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("Controller - Scope - View", "No DOM manipulation"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Controller - $scope - $rootScope - View", "No DOM manipulation"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Service / Factories / Directives", "Re-usable components that can provide data (services) or modify DOM (directives)"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Data Model", "Any JSON/POJO data. All or part can be placed into scope to populate the view"));
             this.Add(deckSlide);
