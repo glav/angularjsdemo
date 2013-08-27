@@ -304,7 +304,7 @@ namespace Glav.AgularJSDemo.Web.Data
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Keep controllers lean", "Same as in MVC"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Dont be tempted to change DOM in controllers", "Use directives, particularly when using 3rd party components"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Use AngularUI", "Its awesome"));
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("Dont bother with Angular animation until AngularJS 1.2", "It has changed a lot since prior releases. Currently 1.2 in RC"));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Dont bother with Angular animation until AngularJS 1.2", "Changed in 1.2. Also breaking changes - no html-unsafe, routing separate"));
             this.Add(deckSlide);
 
             // Slide 12
