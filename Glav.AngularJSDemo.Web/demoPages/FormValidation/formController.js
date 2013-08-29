@@ -1,5 +1,5 @@
 ﻿window.app.controller('formController',
-    function ($scope, $rootScope) {
+    function ($scope) {
         function initialise() {
             // Some defaults;
             $scope.personDetails = {

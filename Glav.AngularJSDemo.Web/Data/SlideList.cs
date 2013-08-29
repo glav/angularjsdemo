@@ -271,7 +271,7 @@ namespace Glav.AgularJSDemo.Web.Data
             };
             deckSlide.DetailPoints.Add(new SlideDetailPoint("KnockoutJS - Mostly Imperitive via observables", "Wraps object properties and fires notifications when a property changes") { HighlightClass = HeaderHighlightCssType.KnockoutJS });
             deckSlide.DetailPoints.Add(new SlideDetailPoint("AngularJS - Declarative/Plain JSON", "Uses 'dirty data/dirty checking' to compare an object before and after") { HighlightClass = HeaderHighlightCssType.AngularJS });
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("KnockoutJS - Is all about data binding.", "Provides very rich data binding operations. Not really fair comparison. Durandal would be better to compare.") { HighlightClass = HeaderHighlightCssType.KnockoutJS });
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("KnockoutJS - Is all about data binding.", "Provides very rich data binding operations. Not really fair comparison. EmberJS/Durandal would be better to compare.") { HighlightClass = HeaderHighlightCssType.KnockoutJS });
             deckSlide.DetailPoints.Add(new SlideDetailPoint("AngularJS - Does more than just data binding", "Dependency injection, reuseable components via directives, form validation etc") { HighlightClass = HeaderHighlightCssType.AngularJS });
             deckSlide.DetailPoints.Add(new SlideDetailPoint("jQuery not required, AngularJS is a little faster", "<a href='http://jsperf.com/angularjs-vs-knockoutjs/10' target='_blank'>http://jsperf.com/angularjs-vs-knockoutjs/10</a>"));
 
