@@ -255,7 +255,7 @@ namespace Glav.AgularJSDemo.Web.Data
             };
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Conditionals in common view to enable Angular", "May not always want Angular invoked, particularly legacy apps"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Test in release mode", "Ensure you are bundling/minification safe"));
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("", ""));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Resharper has AngularJS Intellisense extensions", ""));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("", ""));
             this.Add(deckSlide);
 
