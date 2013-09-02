@@ -251,12 +251,13 @@ namespace Glav.AgularJSDemo.Web.Data
                 Title = "Using Angular in an ASP.Net app #2",
                 SubTitle = "",
                 TitleBlurb = "",
-                DetailHeading = ""
+                DetailHeading = "",
+                ImageSource="/images/sidewaffle.png"
             };
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Conditionals in common view to enable Angular", "May not always want Angular invoked, particularly legacy apps"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Test in release mode", "Ensure you are bundling/minification safe"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Resharper has AngularJS Intellisense extensions", ""));
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("", ""));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("SideWaffle.com", "AngularJS templates for controller, directive etc in Visual Studio.Also includes Durandal, Humans.txt and others"));
             this.Add(deckSlide);
 
             // Slide 5
