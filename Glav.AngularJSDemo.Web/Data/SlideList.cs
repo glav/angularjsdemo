@@ -288,7 +288,7 @@ namespace Glav.AgularJSDemo.Web.Data
                 DetailHeading = ""
             };
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Built from ground up to be testable", ""));
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("Plenty of samples for Jasmine(Karma) and QUnit", ""));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("Plenty of samples for Jasmine, Karma(Testacular) and QUnit", ""));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Integrate early into build process", ""));
             this.Add(deckSlide);
 
