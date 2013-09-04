@@ -1,4 +1,4 @@
-﻿window.app.service('servicesFactoriesService',
+﻿window.app.service('theService',
     function () {
         // We are in a constructor function
         this.serviceProperty = 1;

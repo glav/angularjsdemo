@@ -1,4 +1,4 @@
-﻿window.app.controller('anotherController',
+﻿window.app.controller('mainController',
     function ($scope, theFactory, theService) {
 
         $scope.callFactory = function() {

@@ -256,3 +256,9 @@ section.i18n ul {
         text-align: left;
         width: 20%;    
     }
+
+    img.controller-service-view {
+        position: absolute;
+        left: 0;
+        top: 0;    
+    }

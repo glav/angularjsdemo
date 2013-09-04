@@ -256,7 +256,7 @@ namespace Glav.AgularJSDemo.Web.Data
             };
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Conditionals in common view to enable Angular", "May not always want Angular invoked, particularly legacy apps"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Test in release mode", "Ensure you are bundling/minification safe"));
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("Resharper has AngularJS Intellisense extensions", ""));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("VS 2013 & Resharper has AngularJS Intellisense extensions (2012)", ""));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("SideWaffle.com", "AngularJS templates for controller, directive etc in Visual Studio.Also includes Durandal, Humans.txt and others"));
             this.Add(deckSlide);
 
@@ -337,7 +337,9 @@ namespace Glav.AgularJSDemo.Web.Data
             deckSlide.DetailPoints.Add(new SlideDetailPoint("https://github.com/glav/angularjsdemo", "Complete source code for entire deck and demo") { HighlightClass = HeaderHighlightCssType.InfoPointAccent5 });
             deckSlide.DetailPoints.Add(new SlideDetailPoint("http://angularjs.azurewebsites.net", "Online version of this demo") { HighlightClass = HeaderHighlightCssType.AngularJS });
             deckSlide.DetailPoints.Add(new SlideDetailPoint("http://angular-ui.github.io/", "AngularUI") { HighlightClass = HeaderHighlightCssType.InfoPointAccent3 });
-			this.Add(deckSlide);
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("http://blogs.jetbrains.com/dotnet/2013/02/angularjs-support-for-resharper/", "Resharper AngularJS Intellisense Extension") { HighlightClass = HeaderHighlightCssType.InfoPointAccent2 });
+            //
+            this.Add(deckSlide);
 
         }
 	}

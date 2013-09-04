@@ -202,6 +202,7 @@
     <Content Include="demoPages\i18n\angular-locale_ru.js" />
     <Content Include="demoPages\i18n\angular-locale_zh-cn.js" />
     <Content Include="demoPages\i18n\i18nController.js" />
+    <Content Include="Images\controller-service-heirarchy.png" />
     <Content Include="Images\html-screen1.PNG" />
     <Content Include="Images\keep-calm-and-follow-the-prime-directive.png" />
     <Content Include="Images\radar-transparent.gif" />
@@ -240,9 +241,9 @@
     <Content Include="demoPages\Routing\routing-config.js" />
     <Content Include="demoPages\ServicesFactories.htm" />
     <Content Include="demoPages\ServicesFactories\anotherController.js" />
-    <Content Include="demoPages\ServicesFactories\servicesFactoriesFactory.js" />
-    <Content Include="demoPages\ServicesFactories\servicesFactoriesService.js" />
-    <Content Include="demoPages\ServicesFactories\servicesFactoriesController.js" />
+    <Content Include="demoPages\ServicesFactories\theFactory.js" />
+    <Content Include="demoPages\ServicesFactories\theService.js" />
+    <Content Include="demoPages\ServicesFactories\mainController.js" />
     <Content Include="Doco\Glav.WebApiDemo.Web.XML" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
