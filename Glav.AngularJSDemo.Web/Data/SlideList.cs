@@ -320,7 +320,7 @@ namespace Glav.AgularJSDemo.Web.Data
             deckSlide.DetailPoints.Add(new SlideDetailPoint("debugger; tends to break/stop angular", "Sometimes ok - use console.log a lot"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Look for thrown exception in console", "Angular is good at reporting these"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("Batarang", "Excellent chrome add in"));
-            deckSlide.DetailPoints.Add(new SlideDetailPoint("", ""));
+            deckSlide.DetailPoints.Add(new SlideDetailPoint("angular.element($0).scope()", "Examine the scope an element has"));
             deckSlide.DetailPoints.Add(new SlideDetailPoint("", ""));
             this.Add(deckSlide);
 
